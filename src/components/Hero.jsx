@@ -30,7 +30,7 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        <NavMenuLinks/>
+        <NavMenuLinks className="hidden md:block"/>
       </div>
     </animated.section>
   );
