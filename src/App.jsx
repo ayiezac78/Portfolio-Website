@@ -41,7 +41,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className='flex justify-center items-center h-screen w-screen'>
+      <div className='flex justify-center items-center h-screen w-full'>
         {
           isLoading ?
           <HashLoader
@@ -52,7 +52,7 @@ function App() {
           data-testid="loader"
         />
           :
-          <div className={`w-full h-screen bg-[#98A59E] dark:bg-gray-800 dark:transition-all dark:duration-300 dark:ease-in-out transition-all duration-300 ease-in-out font-space-mono container mx-auto px-4`}>
+          <div className={`w-full h-screen bg-[#98A59E] dark:bg-gray-800 dark:transition-all dark:duration-300 dark:ease-in-out transition-all duration-300 ease-in-out font-space-mono mx-auto px-4`}>
             <NavigationBar theme={theme} toggleMode={toggleMode} />
             <Routes>
               <Route path='/' element={<Hero />}/>
