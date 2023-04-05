@@ -1,0 +1,9 @@
+.navbar.scrolled {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+}
+
+.navbar {
+  transition: background-color 0.2s ease-in-out;
+}

@@ -8,7 +8,7 @@ const Footer = () => {
     config: { duration: 1000 },
   });
   return (
-    <animated.footer style={animation} className="footer footer-center py-3 px-0 w-auto text-white mt-48">
+    <animated.footer style={animation} className="footer footer-center p-4 bg-base-100 text-base-content">
       <div>
         <p>design & coded by ayie</p>
         <p>Copyright © 2023 - All right reserved.</p>
