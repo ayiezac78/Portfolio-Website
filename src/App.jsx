@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import About from './assets/pages/About'
 import Footer from './components/Footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Skills from './components/Skills';
 
 function App() {
   const [theme, setTheme] = useState();
@@ -52,16 +53,17 @@ function App() {
           data-testid="loader"
         />
           :
-          <div className={`w-full h-screen bg-[#98A59E] dark:bg-gray-800 dark:transition-all dark:duration-300 dark:ease-in-out transition-all duration-300 ease-in-out font-space-mono mx-auto px-4`}>
+          <div className={`w-full h-screen bg-[#98A59E] dark:bg-gray-800 dark:transition-all dark:duration-300 dark:ease-in-out transition-all duration-300 ease-in-out font-space-mono mx-auto px-4 py-4`}>
             <NavigationBar theme={theme} toggleMode={toggleMode} />
             <Routes>
               <Route path='/' element={<Hero />}/>
               <Route path='/about' element={<About/>}/>
+              <Route path='/skills' element={<Skills/>}/>
             </Routes>
-            <Footer/>
           </div>
         }
       </div>
+        <Footer/>
     </BrowserRouter>
   );
 }

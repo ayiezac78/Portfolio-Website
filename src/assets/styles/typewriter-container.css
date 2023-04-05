@@ -1,0 +1,17 @@
+.typewriter-container {
+  height: 150px; /* Adjust this to the height of your content */
+  overflow: hidden;
+  position: relative;
+}
+
+.typewriter-container:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  transform: translateY(-50%);
+  z-index: -1;
+}
