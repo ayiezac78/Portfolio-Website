@@ -12,13 +12,6 @@ function App() {
   const [theme, setTheme] = useState();
   const [isLoading, setIsLoading] = useState(false);
 
-  useEffect(()=>{
-    setIsLoading(true);
-    setTimeout(()=>{
-      setIsLoading(false);
-    },3000)
-  },[])
-
   useEffect(() => {
     const storedTheme = localStorage.getItem('theme');
     if (storedTheme) {
@@ -30,6 +23,13 @@ function App() {
     }
   }, []);
 
+  useEffect(()=>{
+    setIsLoading(true);
+    setTimeout(()=>{
+      setIsLoading(false);
+    },3000)
+  },[])
+
   useEffect(() => {
     document.documentElement.classList.remove('dark', 'light');
     document.documentElement.classList.add(theme);
@@ -39,6 +39,7 @@ function App() {
   const toggleMode = () => {
     setTheme((prevTheme) => (prevTheme === 'dark' ? 'light' : 'dark'));
   };
+  
 
   return (
     <BrowserRouter>
