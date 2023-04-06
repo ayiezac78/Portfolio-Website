@@ -18,7 +18,7 @@ const About = () => {
         <div className="relative">
           <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold mb-5 text-[#324B4C] dark:text-white'>Self Overview</h1>
           <hr className='mb-5'/>
-          <p className='mb-3'>Hi, my name is Ariel Maniago, and most of my friends call me ayie as my nickname. I'm a start-up Front-end Web Developer and, at the same time, a bootcamp product of <a className='link' href="https://kodego.ph/" target='blank'>Kodego</a>. I'm always curious to learn about new tech trends, especially when it comes to creative design. I'm also an ardent musician and a cinematographer enthusiast.<span className='blink'>|</span></p>
+          <p className='mb-5'>Hi, my name is Ariel Maniago, and most of my friends call me ayie as my nickname. I'm a start-up Front-end Web Developer and, at the same time, a bootcamp product of <a className='link' href="https://kodego.ph/" target='blank'>Kodego</a>. I'm always curious to learn about new tech trends, especially when it comes to creative design. I'm also an ardent musician and a cinematographer enthusiast.<span className='blink'>|</span></p>
           <h2 className='text-xl font-bold text-[#324B4C] dark:text-white sm:mb-3'>Tech Stack:</h2>
           <div className='grid grid-cols-3 gap-4 text-[#324B4C] dark:text-white font-semibold text-center'>
             <div className='text-normal mb-2 mr-auto'>Front-end</div>

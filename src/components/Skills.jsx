@@ -8,8 +8,8 @@ const Skills = () => {
   return (
     <section className='text-[#324B4C] dark:text-white'>
       <div className='grid grid-cols-3'>
-        <div className='grid grid-cols-1 grid-rows-3'>
-          <div className='m-auto'>
+        <div className='grid grid-cols-1 grid-rows-3 mr-auto'>
+          <div>
             <div className='tooltip mr-1' data-tip="HTML5">
               <TiHtml5 className='h-7 w-7'/>
             </div>
@@ -20,7 +20,7 @@ const Skills = () => {
               <TbBrandJavascript className='h-7 w-7'/>
             </div>
           </div>
-          <div className='m-auto'>
+          <div>
             <div className='tooltip mr-1' data-tip="Tailwind CSS">
               <TbBrandTailwind className='h-7 w-7'/>
             </div>
@@ -32,30 +32,30 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className='grid grid-cols-1 grid-rows-3 gap-x-2'>
-          <div className='m-auto'>
-            <div className="tooltip mr-2" data-tip="MySQL">
+        <div className='grid grid-cols-1 grid-rows-3 m-auto'>
+          <div>
+            <div className="tooltip mr-1" data-tip="MySQL">
               <TbBrandMysql className='h-7 w-7'/>
             </div>
-            <div className="tooltip mr-2" data-tip="PHP">
+            <div className="tooltip mr-1" data-tip="PHP">
               <TbBrandPhp className='h-7 w-7'/>
             </div>
             <div className="tooltip" data-tip="PHP">
               <TbBrandLaravel className='h-7 w-7'/>
             </div>
           </div>
-          <div className='m-auto'>
+          <div>
             <div className='tooltip' data-tip="JSON API">
               <TbJson className='h-7 w-7'/>
             </div>
           </div>
         </div>
-        <div className='grid grid-cols-1 grid-rows-3'>
-          <div className='m-auto'>
-            <div className='tooltip mr-2' data-tip="Figma">
+        <div className='grid grid-cols-1 grid-rows-3 m-auto'>
+          <div>
+            <div className='tooltip mr-1' data-tip="Figma">
               <TbBrandFigma className='h-7 w-7'/>
             </div>
-            <div className='tooltip mr-2' data-tip="Figma">
+            <div className='tooltip mr-1' data-tip="Figma">
               <GoMarkGithub className='h-7 w-7'/>
             </div>
             <div className='tooltip' data-tip="Figma">
