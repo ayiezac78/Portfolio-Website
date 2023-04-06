@@ -1,4 +1,5 @@
 import {FiMoon, FiSun,FiDownload} from 'react-icons/fi'
+import {TbAt} from 'react-icons/tb'
 import { useState, useEffect } from 'react';
 import '../assets/styles/blurbgnavbar.css'
 import { Link } from 'react-router-dom';
@@ -27,7 +28,7 @@ useEffect(() => {
   return (
     <div className="navbar w-full fixed top-0 left-0 px-4 z-10">
       <div className="flex-1">
-        <Link to='/' className="normal-case text-3xl text-[#324B4C] dark:text-[#ECEFEF] font-extralight">ayie</Link>
+        <Link to='/' className="normal-case text-3xl text-[#324B4C] dark:text-[#ECEFEF] font-extralight"><TbAt className='inline-block'/>yie</Link>
       </div>
       <div className="flex-none">
       <button className='mr-5 text-white' onClick={handleClick}>
