@@ -8,12 +8,11 @@ const Footer = () => {
     config: { duration: 1000 },
   });
   return (
-    <animated.footer style={animation} className="footer footer-center pb-3 text-gray-800">
+    <div style={animation} className="footer footer-center">
       <div>
-        <p>design & coded by ayie</p>
-        <p>Copyright © 2023 - All right reserved.</p>
+        <p>design & coded by ayie©</p>
       </div>
-    </animated.footer>
+    </div>
   )
 }
 
