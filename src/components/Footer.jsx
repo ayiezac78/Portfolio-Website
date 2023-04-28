@@ -8,7 +8,7 @@ const Footer = () => {
     config: { duration: 1000 },
   });
   return (
-    <div style={animation} className="footer footer-center text-black">
+    <div style={animation} className="footer footer-center p-4 text-[#324B4C] dark:text-white">
       <div>
         <p>design & coded by ayie©</p>
       </div>
