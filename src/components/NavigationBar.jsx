@@ -28,9 +28,9 @@ useEffect(() => {
 
   return (
     <div className="navbar w-full fixed top-0 left-0 px-4 z-10">
-      <div className="flex-1">
-        <Link to='/' className="normal-case text-3xl mr-3 text-[#324B4C] dark:text-[#ECEFEF] font-extralight"><TbAt className='inline-block'/>yie</Link>
-      <NavMenuLinks className="hidden md:block"/>
+      <div className="flex-1 gap-1">
+        <Link to='/' className="normal-case text-2xl text-[#324B4C] dark:text-[#ECEFEF] font-bold"><TbAt className='inline-block'/>yie</Link>
+        <NavMenuLinks className="hidden md:block"/>
       </div>
       <div className="flex-none">
       <button className='mr-5 text-white' onClick={handleClick}>
@@ -40,7 +40,7 @@ useEffect(() => {
             <FiMoon className={`h-6 w-6 text-[#324B4C] ${iconClicked ? 'icon-clicked' : ''}`} />
           )}
         </button>
-        <button className="transition duration-300 ease-in-out rounded-md px-3 py-2 border-2 border-[#324B4C] text-[#324B4C] hover:bg-[#324B4C] hover:text-white hover:border-white dark:hover:bg-[#889FA5] dark:hover:border-white dark:hover:text-[#000] dark:text-white dark:border-white">CV<FiDownload className='inline ml-2'/></button>
+        <button className="btn btn-ghost btn-sm gap-2 text-black border-black hover:border-black hover:bg-[#5C608E] bg-[#75758C] dark:hover:bg-[#889FA5] dark:hover:border-white dark:hover:text-[#000] dark:text-black dark:border-white">RESUME</button>
       </div>
     </div>
   )

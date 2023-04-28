@@ -11,7 +11,7 @@ const NavMenuLinks = () => {
         <div className="flex items-center mr-2 group">
           <div className="flex items-center  p-1">
             {location.pathname === '/about' ? (
-              <FiHome className="text-[#324B4C] dark:text-white inline-block mr-2 md:m-1 group-hover:text-white group-hover:transition group-hover:duration-200 group-hover:ease-linear dark:group-hover:opacity-50" />
+              <FiHome className="text-[#324B4C] group-active:font-bold dark:text-white inline-block mr-2 md:m-1 group-hover:text-white group-hover:transition group-hover:duration-200 group-hover:ease-linear dark:group-hover:opacity-50" />
             ) : (
               <FiUser className="text-[#324B4C] dark:text-white inline-block mr-2 md:m-1 group-hover:text-white group-hover:transition group-hover:duration-200 group-hover:ease-linear dark:group-hover:opacity-50" />
             )}
