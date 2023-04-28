@@ -53,17 +53,19 @@ function App() {
           data-testid="loader"
         />
           :
-          <div className={`w-full h-screen bg-[#98A59E] dark:bg-gray-800 dark:transition-all dark:duration-300 dark:ease-in-out transition-all duration-300 ease-in-out font-space-mono mx-auto px-4`}>
+          <div className={`w-full bg-[#98A59E] dark:bg-gray-800 dark:transition-all dark:duration-300 dark:ease-in-out transition-all duration-300 ease-in-out font-space-mono mx-auto px-4`}>
             <NavigationBar theme={theme} toggleMode={toggleMode} />
-            <Routes>
-              <Route path='/' element={<Hero />}/>
-              <Route path='/about' element={<About/>}/>
-              <Route path='/skills' element={<Skills/>}/>
-            </Routes>
+            <main className='min-h-screen'>
+              <Routes>
+                <Route path='/' element={<Hero />}/>
+                <Route path='/about' element={<About/>}/>
+                <Route path='/skills' element={<Skills/>}/>
+              </Routes>
+            </main>
+            <Footer/>
           </div>
         }
       </div>
-        {/* <Footer/> */}
     </BrowserRouter>
   );
 }
