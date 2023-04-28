@@ -13,7 +13,7 @@ const About = () => {
     config: { duration: 1000 },
   });
   return (
-    <animated.section style={animation} className='py-10 md:py-22 lg:py-10 xl:py-20'>
+    <animated.section style={animation} className='py-10 md:py-22 lg:py-10 xl:py-20 mt-20'>
       <div className="grid grid-cols-1 md:grid-cols-2 place-items-center gap-5 md:gap-10 text-white p-5 md:p-10 lg:p-20">
         <div className="relative">
           <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold mb-5 text-[#324B4C] dark:text-white'>Self Overview</h1>
