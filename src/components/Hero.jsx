@@ -11,7 +11,7 @@ const Hero = () => {
     config: { duration: 1000 },
   });
   return (
-    <animated.section style={animation} className='py-10 md:py-32 sm:py-28'>
+    <animated.section style={animation} className='py-0 md:py-32 sm:py-28'>
       <div className="grid grid-cols-1 md:grid-cols-2 place-content-center place-items-center gap-5 md:gap-10 text-white p-5 md:p-10 lg:p-20">
         <div>
           <p className="text-[#324B4C] mb-2 text-lg md:text-xl font-bold">Hi, my name is,</p>
@@ -30,7 +30,6 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        <NavMenuLinks className="hidden md:block"/>
       </div>
     </animated.section>
   );

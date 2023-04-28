@@ -27,7 +27,6 @@ const About = () => {
           </div>
           <Skills/>
         </div>
-        <NavMenuLinks className="hidden md:block"/>
       </div>
     </animated.section>
   );
