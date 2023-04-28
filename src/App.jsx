@@ -7,6 +7,7 @@ import About from './assets/pages/About'
 import Footer from './components/Footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Skills from './components/Skills';
+import Portfolio from './components/Portfolio';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -42,7 +43,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className='flex justify-center items-center h-screen w-full'>
+      <div className='flex justify-center items-center h-screen w-full font-space-mono'>
         {
           isLoading ?
           <HashLoader
@@ -53,13 +54,13 @@ function App() {
           data-testid="loader"
         />
           :
-          <div className={`w-full bg-[#98A59E] dark:bg-gray-800 dark:transition-all dark:duration-300 dark:ease-in-out transition-all duration-300 ease-in-out font-space-mono mx-auto px-4`}>
+          <div className={`w-full bg-[#98A59E] dark:bg-gray-800 dark:transition-all dark:duration-300 dark:ease-in-out transition-all duration-300 ease-in-out mx-auto px-4`}>
             <NavigationBar theme={theme} toggleMode={toggleMode} />
             <main className='min-h-screen'>
               <Routes>
                 <Route path='/' element={<Hero />}/>
                 <Route path='/about' element={<About/>}/>
-                <Route path='/skills' element={<Skills/>}/>
+                <Route path='/portfolio' element={<Portfolio/>}/>
               </Routes>
             </main>
             <Footer/>

@@ -1,8 +1,7 @@
-import {FiInstagram, FiLinkedin } from 'react-icons/fi'
-import {GoMarkGithub} from 'react-icons/go'
+import {HiOutlineArrowLongRight} from 'react-icons/hi2'
 import '../assets/styles/blink-animation.css'
 import { useSpring, animated } from '@react-spring/web';
-import meImg from '../assets/images/me.jpg'
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const animation = useSpring({
@@ -27,29 +26,7 @@ const Hero = () => {
             I build things for the web.
           </h2>
           <p className='text-[#324B4C] mb-5 dark:text-white'>I am a web developer that passionate about building beautiful and functional web applications.</p>
-          <div className="flex md:flex-nowrap">
-            <a
-              href="https://github.com/ayiezac78"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <GoMarkGithub className="h-8 w-8 md:h-10 md:w-10 mr-3 text-[#324B4C] mb-3 md:mb-0 dark:text-white hover:text-gray-500 dark:hover:text-gray-400 transition duration-300 ease-in-out" />
-            </a>
-            <a
-              href="https://www.instagram.com/ayezac78/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FiInstagram className="h-8 w-8 md:h-10 md:w-10 text-[#324B4C] mr-3 mb-3 md:mb-0 dark:text-white hover:text-gray-500 dark:hover:text-gray-400 transition duration-300 ease-in-out" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/ayie/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FiLinkedin className="h-8 w-8 md:h-10 md:w-10 text-[#324B4C] mb-3 md:mb-0 dark:text-white hover:text-gray-500 dark:hover:text-gray-400 transition duration-300 ease-in-out" />
-            </a>
-          </div>
+          <Link to='/about' className='btn text-white btn-sm md:w-36 sm:w-32 bg-[#324B4C]'>About Me <HiOutlineArrowLongRight className='ml-2' size={20}/></Link>
         </div>
       </div>
     </animated.section>

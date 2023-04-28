@@ -26,6 +26,7 @@ export default {
       'space-mono':"'Space Mono', monospace"
     },
     extend: {},
+    
   },
   plugins: [require("daisyui")],
 }
