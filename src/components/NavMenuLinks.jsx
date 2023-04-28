@@ -21,10 +21,20 @@ const NavMenuLinks = () => {
           </div>
         </div>
       </Link>
-      <div className="flex items-center mr-2">
-        <FiFolder className="text-[#324B4C] dark:text-white inline-block mr-2 md:m-1" />
-        <span className="inline-block py-2 md:py-0 sm:hidden md:block">Portfolio</span>
-      </div>
+      <Link to={location.pathname === '/portfolio' ? '/' : '/portfolio'}>
+        <div className="flex items-center mr-2 group">
+          <div className="flex items-center  p-1">
+            {location.pathname === '/portfolio' ? (
+              <FiHome className="text-[#324B4C] group-active:font-bold dark:text-white inline-block mr-2 md:m-1 group-hover:text-white group-hover:transition group-hover:duration-200 group-hover:ease-linear dark:group-hover:opacity-50" />
+            ) : (
+              <FiFolder className="text-[#324B4C] dark:text-white inline-block mr-2 md:m-1 group-hover:text-white group-hover:transition group-hover:duration-200 group-hover:ease-linear dark:group-hover:opacity-50" />
+            )}
+            <span className="inline-block py-2 md:py-0 sm:hidden md:block group-hover:text-white group-hover:transition group-hover:duration-200 group-hover:ease-linear dark:group-hover:opacity-50">
+              {location.pathname === '/portfolio' ? 'Home' : 'Portfolio'}
+            </span>
+          </div>
+        </div>
+      </Link>
       <div className="flex items-center mr-2">
         <FiEdit3 className="text-[#324B4C] dark:text-white inline-block mr-2" />
         <span className="inline-block py-2 md:py-0 sm:hidden md:block">Blog</span>
