@@ -21,7 +21,6 @@ const NavMenuLinks = () => {
           </div>
         </div>
       </Link>
-
       <div className="flex items-center mr-2">
         <FiFolder className="text-[#324B4C] dark:text-white inline-block mr-2 md:m-1" />
         <span className="inline-block py-2 md:py-0 sm:hidden md:block">Portfolio</span>

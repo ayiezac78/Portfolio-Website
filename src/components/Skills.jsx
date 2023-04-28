@@ -55,10 +55,10 @@ const Skills = () => {
             <div className='tooltip mr-1' data-tip="Figma">
               <TbBrandFigma className='h-7 w-7'/>
             </div>
-            <div className='tooltip mr-1' data-tip="Figma">
+            <div className='tooltip mr-1' data-tip="Github">
               <GoMarkGithub className='h-7 w-7'/>
             </div>
-            <div className='tooltip' data-tip="Figma">
+            <div className='tooltip' data-tip="Git">
               <TbBrandGit className='h-7 w-7'/>
             </div>
           </div>
