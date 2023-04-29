@@ -1,7 +1,8 @@
 import React from 'react'
-import {TiHtml5, TiCss3} from 'react-icons/ti'
+import {TiHtml5, TiCss3, TiVideo} from 'react-icons/ti'
 import {TbBrandJavascript, TbBrandTailwind, TbBrandBootstrap, TbBrandReact, TbBrandMysql, TbBrandPhp, TbBrandLaravel, TbJson, TbBrandFigma, TbBrandGit} from 'react-icons/tb'
 import {GoMarkGithub} from 'react-icons/go'
+import {BsFileEarmarkPlayFill} from 'react-icons/bs'
 
 
 const Skills = () => {
@@ -60,6 +61,14 @@ const Skills = () => {
             </div>
             <div className='tooltip' data-tip="Git">
               <TbBrandGit className='h-7 w-7'/>
+            </div>
+          </div>
+          <div>
+            <div className='tooltip' data-tip="Git">
+              <TiVideo className='h-7 w-7'/>
+            </div>
+            <div className='tooltip' data-tip="Git">
+              <BsFileEarmarkPlayFill className='h-7 w-7'/>
             </div>
           </div>
         </div>

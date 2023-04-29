@@ -1,4 +1,4 @@
-// import {BsFolder} from 'react-icons/bs';
+import {BsTags} from 'react-icons/bs';
 
 const Cards = ({ title, description, icon, github_icon, livesite_icon,tags }) => {
   return (
@@ -15,7 +15,8 @@ const Cards = ({ title, description, icon, github_icon, livesite_icon,tags }) =>
         <p className="text-[#324B4C]">{description}</p>
       </div>
       <hr className="border border-gray-400"/>
-      <div className="px-6 py-4 flex justify-start text-xs text-gray-600">
+      <div className="px-6 py-4 flex justify-start text-xs text-gray-600 gap-2">
+        <BsTags className='h-5 w-5'/>
         {tags}
       </div>
     </div>
