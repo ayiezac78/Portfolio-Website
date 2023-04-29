@@ -27,7 +27,7 @@ useEffect(() => {
 }, []);
 
   return (
-    <div className="navbar w-full fixed top-0 left-0 px-4 z-10">
+    <div className="navbar w-full fixed top-0 left-0 px-4 z-10 shadow">
       <div className="flex-1 gap-1">
         <Link
           to="/"
@@ -71,7 +71,7 @@ useEffect(() => {
           </svg>
         </label>
 
-        <button className="btn btn-sm gap-2 text-slate-50 border-black hover:border-black hover:bg-[#889FA5] dark:hover:bg-[#889FA5] dark:hover:border-white dark:hover:text-[#fff] dark:text-white dark:border-white font-space-mono">
+        <button className="btn btn-sm gap-2 text-[#324B4C] bg-transparent outline outline-1 outline-[#324B4C] hover:border-black hover:bg-[#889FA5] dark:hover:bg-[#889FA5] dark:hover:border-white dark:hover:text-[#fff] dark:text-white dark:border-white font-space-mono">
           RESUME
         </button>
       </div>
