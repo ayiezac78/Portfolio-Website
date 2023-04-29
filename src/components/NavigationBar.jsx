@@ -71,7 +71,7 @@ useEffect(() => {
           </svg>
         </label>
 
-        <button className="btn btn-sm gap-2 text-[#324B4C] bg-transparent outline outline-1 outline-[#324B4C] hover:border-black hover:bg-[#889FA5] dark:hover:bg-[#889FA5] dark:hover:border-white dark:hover:text-[#fff] dark:text-white dark:border-white font-space-mono">
+        <button className="btn btn-sm gap-2 text-[#324B4C] bg-[#ECFEF4] outline outline-1 outline-[#324B4C] hover:border-black hover:bg-transparent dark:hover:bg-[#889FA5] dark:hover:border-white dark:hover:text-[#fff] dark:text-white dark:border-white font-space-mono">
           RESUME
         </button>
       </div>
