@@ -72,3 +72,19 @@ function App() {
 }
 
 export default App;
+
+const onRouteChange = (path) => {
+  window.history.pushState(null, '', path);
+};
+
+window.addEventListener('popstate', () => {
+  onRouteChange(window.location.pathname);
+});
+
+const NotFound = () => {
+  return (
+    <div>
+      <h1>404 - Page not found</h1>
+    </div>
+  );
+};
