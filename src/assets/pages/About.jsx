@@ -15,8 +15,8 @@ const About = () => {
     config: { duration: 1000 },
   });
   return (
-    <animated.section style={animation} className="md:py-32 lg:py-10 xl:py-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 place-items-center gap-2 md:gap-10 text-white sm:py-32 md:py-32 lg:py-32 mt-44">
+    <animated.section style={animation} className="md:py-20 lg:py-10 xl:py-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 place-items-center gap-2 md:gap-10 text-white sm:py-32 md:py-20 lg:py-20 mt-32">
         <div className="relative">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-5 text-[#324B4C] dark:text-white">
             Self Overview

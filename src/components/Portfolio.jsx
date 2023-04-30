@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useSpring, animated } from "@react-spring/web";
 import Cards from '../components/Cards';
 import {BsFolder, BsGithub, BsBoxArrowUpRight} from 'react-icons/bs';
@@ -9,7 +10,6 @@ const Portfolio = () => {
     config: { duration: 1000 },
   });
 
-  
 
   const cardData = [
     {
@@ -57,11 +57,11 @@ const Portfolio = () => {
     },
   ]
   return (
-    <animated.section style={animation} className="">
-      <h1 className="md:mt-[16rem] sm:mt-[58rem] md:mb-0 sm:mb-10 md:text-3xl sm:text-2xl sm:text-center md:text-left text-[#324B4C] font-bold ">Some things I've built</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center lg:gap-1 md:gap-3 text-white md:py-10 lg:py-10 md:m-auto">
+    <animated.section style={animation} className="flex flex-col justify-center">
+      <h1 className="lg:mt-[12rem] md:mt-[16rem] sm:mt-[58rem] md:mb-0 sm:mb-10 md:text-3xl sm:text-2xl sm:text-center md:text-left text-[#324B4C] font-bold dark:text-slate-50">Some things I've built</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center lg:gap-3 md:gap-3 text-white md:py-10 lg:py-10 md:m-auto">
       {cardData.map((card, index) => (
-        <a key={index} href={card.link} target="_black">
+        <a key={index} href={card.link} target="_blank" rel='noreferrer noopener'>
           <Cards
             key={index}
             title={card.title}

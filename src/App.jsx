@@ -6,8 +6,12 @@ import Hero from './components/Hero';
 import About from './assets/pages/About'
 import Footer from './components/Footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Skills from './components/Skills';
 import Portfolio from './components/Portfolio';
+import Experience from './assets/pages/Experience';
+import NavTabs from './components/NavTabs';
+// import DynamicTabs from './components/Tabss';
+
+
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -61,6 +65,8 @@ function App() {
                 <Route path='/' element={<Hero />}/>
                 <Route path='/about' element={<About/>}/>
                 <Route path='/portfolio' element={<Portfolio/>}/>
+                {/* <Route path='/experience' element={<Experience/>}/> */}
+                <Route path='/experience' element={<NavTabs/>}/>
               </Routes>
             </main>
             <Footer/>
