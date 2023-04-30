@@ -7,9 +7,7 @@ import About from './assets/pages/About'
 import Footer from './components/Footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Portfolio from './components/Portfolio';
-import Experience from './assets/pages/Experience';
 import NavTabs from './components/NavTabs';
-// import DynamicTabs from './components/Tabss';
 
 
 
@@ -65,7 +63,6 @@ function App() {
                 <Route path='/' element={<Hero />}/>
                 <Route path='/about' element={<About/>}/>
                 <Route path='/portfolio' element={<Portfolio/>}/>
-                {/* <Route path='/experience' element={<Experience/>}/> */}
                 <Route path='/experience' element={<NavTabs/>}/>
               </Routes>
             </main>

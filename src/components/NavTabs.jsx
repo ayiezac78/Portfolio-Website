@@ -5,6 +5,7 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { useMediaQuery } from "@mui/material";
+import {FiArrowRightCircle} from 'react-icons/fi'
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -16,7 +17,7 @@ function TabPanel(props) {
       id={`simple-tabpanel-${index}`}
       aria-labelledby={`simple-tab-${index}`}
       {...other}
-      className="font-space-mono"
+      className="font-space-mono w-full"
     >
       {value === index && (
         <Box className=" p-4">
@@ -48,12 +49,12 @@ export default function BasicTabs() {
   };
 
   return (
-    <div className="py-32 grid place-items-center">
-      <h1 className=" text-[#324B4C] font-bold dark:text-slate-50 text-2xl lg:text-4xl sm:py-10 md:py-0">
+    <div className=" py-40 grid place-items-center">
+      <h1 className=" text-[#324B4C] font-bold dark:text-slate-50 text-2xl lg:text-4xl sm:py-10 md:py-10">
         Career History
       </h1>
-      <Box className="w-full  text-black flex justify-center items-center md:flex sm:block">
-        <Box className="flex flex-row overflow-x-auto">
+      <Box className="max-w-[700px] text-black flex justify-center items-center md:flex sm:block">
+        <Box className="flex flex-row sm:max-w-[22rem]">
           <Tabs
             orientation={smallScreen ? "vertical" : "horizonal"}
             value={value}
@@ -63,25 +64,72 @@ export default function BasicTabs() {
             allowScrollButtonsMobile
             TabIndicatorProps={{
               style: {
-                backgroundColor: "#324B4C"
+                backgroundColor: "#324B4C",
+                width: '1.5px',
               }
             }}
+            className="md:border-r-[1px] md:border-b-0 sm:border-b-[1px] border-r-slate-500"
+            wrapped
             textColor="#324B4C"
             aria-label="scrollable force tabs example"
           >
-            <Tab label={<span className="font-space-mono">GNP1 Marketing</span> } {...a11yProps(0)} />
-            <Tab label={<span className="font-space-mono">Island Living Channel</span> } {...a11yProps(1)} />
-            <Tab label={<span className="font-space-mono">Negros Women for Tomorrow Foundation, Inc.</span> } {...a11yProps(2)} />
+            <Tab className="hover:bg-[#7F928E] transition-all duration-200 ease-in-out" label={<span className="font-space-mono">Kodego</span> } {...a11yProps(0)} />
+            <Tab className="hover:bg-[#7F928E] transition-all duration-200 ease-in-out" label={<span className="font-space-mono">Safeguard DNA Diagnostics, Inc.</span> } {...a11yProps(1)} />
+            <Tab className="hover:bg-[#7F928E] transition-all duration-200 ease-in-out" label={<span className="font-space-mono">GNP1 Marketing</span> } {...a11yProps(2)} />
+            <Tab className="hover:bg-[#7F928E] transition-all duration-200 ease-in-out" label={<span className="font-space-mono">Island Living Channel</span> } {...a11yProps(3)} />
+            <Tab className="hover:bg-[#7F928E] transition-all duration-200 ease-in-out" label={<span className="font-space-mono">Negros Women for Tomorrow Foundation, Inc.</span> } {...a11yProps(4)} />
+            <Tab className="hover:bg-[#7F928E] transition-all duration-200 ease-in-out" label={<span className="font-space-mono">Binalbagan Catholic College</span> } {...a11yProps(5)} />
           </Tabs>
         </Box>
         <TabPanel value={value} index={0}>
-          Item One
+        <p className="mb-2 text-xl"><span className='text-[#324B4C]'>Bootcamp Graduate</span> <a href="https://kodego.ph/" className="text-[#384B41] link link-hover">@ Kodego</a></p>
+            <p className="mb-2 text-sm">December 2022 - April 2023</p>
+              <ul>
+                <li className=" before:content-['ᐉ']"> Studied of best practices in web programming in both front-end and back-end technologies through extensive hands-on experience, peer-programming, and building real-world projects.</li>
+              </ul>
         </TabPanel>
         <TabPanel value={value} index={1}>
-          Item Two
+          <p className="mb-2 text-xl"><span className='text-[#324B4C]'>Medical Encoder</span> @ Safeguard DNA Diagnostics, Inc.</p>
+            <p className="mb-2 text-sm">January 2021 - February 2023</p>
+              <ul>
+                <li className=" before:content-['ᐉ']"> Encoding & uploading of patient's information & patient's laboratory results on laboratory's database thru web app system</li>
+                <li className=" before:content-['ᐉ']"> Outbound calls to the patient by verifying their basic information for contact tracing purposes</li>
+                <li className=" before:content-['ᐉ']"> Consolidating & verifying the CDRS reports of patient's laboratory results before passing the report to DOH</li>
+              </ul>
         </TabPanel>
         <TabPanel value={value} index={2}>
-          Item Three
+          <p className="mb-2 text-xl"><span className='text-[#324B4C]'>Field Auditor</span> @ GNP1 Marketing</p>
+            <p className="mb-2 text-sm">June 2019 - March 2020</p>
+              <ul>
+                <li className=" before:content-['ᐉ']"> Doing field audits of accountability of daily sales personnel and store client audit visitation.</li>
+                <li className=" before:content-['ᐉ']"> Outbound call audit of existing clients</li>
+                <li className=" before:content-['ᐉ']"> Monthly warehouse audit and balancing the remittance monitoring</li>
+              </ul>
+        </TabPanel>
+        <TabPanel value={value} index={3}>
+          <p className="mb-2 text-xl"><span className='text-[#324B4C]'>Freelance Videographer</span> @ Island Living Channel</p>
+          <p className="mb-4 text-sm">January - April 2019</p>
+            <ul>
+              <li className=" before:content-['ᐉ']"> Taking video clips of different events and sceneries.</li>
+              <li className=" before:content-['ᐉ']"> Assisting Lead Videographer of different tools for videography</li>
+            </ul>
+        </TabPanel>
+        <TabPanel value={value} index={4}>
+          <p className="mb-2 text-xl"><span className='text-[#324B4C]'>Loan Officer</span>  <a href="https://nwtf.org.ph/" className="text-[#384B41] link link-hover">@ Negros Women for Tomorrow Foundation, Inc.</a></p>
+          <p className="mb-4 text-sm">October 2016 - January 2019</p>
+            <ul>
+              <li className=" before:content-['ᐉ']"> Process Loan Application</li>
+              <li className=" before:content-['ᐉ']"> Montly reportings of loan portfolios</li>
+              <li className=" before:content-['ᐉ']"> Conducting center meetings in different areas.</li>
+              <li className=" before:content-['ᐉ']"> Markets of different products of the company including productive and non-productive</li>
+            </ul>
+        </TabPanel>
+        <TabPanel value={value} index={5}>
+          <p className="mb-2 text-xl"><span className='text-[#324B4C]'>BS Information Technology</span> @ Binalbagan Catholic College</p>
+          <p className="mb-4 text-sm">June 2011 - April 2015</p>
+          <ul>
+              <li className=" before:content-['ᐉ']"> Studied of different fields in Information Techonology, primarily in the field of computer network systems, programming & multimedias</li>
+            </ul>
         </TabPanel>
       </Box>
     </div>
