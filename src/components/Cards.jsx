@@ -42,25 +42,25 @@ export default function BasicTable() {
         <Table aria-label="simple table">
           <TableHead className='shadow'>
             <TableRow>
-              <TableCell style={{ color: '##34554B' }}>Year</TableCell>
-              <TableCell style={{ color: '##34554B' }}>Title</TableCell>
-              {isLgScreen && <TableCell style={{ color: '##34554B' }}>Description</TableCell>}
-              {isLgScreen && <TableCell style={{ color: '##34554B' }}>Made at</TableCell>}
-              {isLgScreen && <TableCell style={{ color: '##34554B' }}>Built with</TableCell>}
-              <TableCell style={{ color: '##34554B' }}>Link</TableCell>
+              <TableCell style={{ color: '#34554B' }}>Year</TableCell>
+              <TableCell style={{ color: '#34554B' }}>Title</TableCell>
+              {isLgScreen && <TableCell style={{ color: '#34554B' }}>Description</TableCell>}
+              {isLgScreen && <TableCell style={{ color: '#34554B' }}>Made at</TableCell>}
+              {isLgScreen && <TableCell style={{ color: '#34554B' }}>Built with</TableCell>}
+              <TableCell style={{ color: '#34554B' }}>Link</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {rows.map((row, index) => (
               <TableRow key={index}>
-                <TableCell style={{ color: '##34554B', marginRight: '10px' }} component="th" scope="row">
+                <TableCell style={{ color: '#34554B', marginRight: '10px' }} component="th" scope="row">
                   {row.year}
                 </TableCell>
-                <TableCell style={{ color: '##34554B' }}>{row.title}</TableCell>
-                {isLgScreen && <TableCell style={{ color: '##34554B' }}>{row.description}</TableCell>}
-                {isLgScreen && <TableCell style={{ color: '##34554B' }}>{row.made}</TableCell>}
-                {isLgScreen && <TableCell style={{ color: '##34554B' }}>{row.built}</TableCell>}
-                <TableCell style={{ color: '##34554B' }}>
+                <TableCell style={{ color: '#34554B' }}>{row.title}</TableCell>
+                {isLgScreen && <TableCell style={{ color: '#34554B' }}>{row.description}</TableCell>}
+                {isLgScreen && <TableCell style={{ color: '#34554B' }}>{row.made}</TableCell>}
+                {isLgScreen && <TableCell style={{ color: '#34554B' }}>{row.built}</TableCell>}
+                <TableCell style={{ color: '#34554B' }}>
                   <div className="flex gap-2">
                     {row.github_link} {row.proj_link}
                   </div>
