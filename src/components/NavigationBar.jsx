@@ -107,7 +107,7 @@ useEffect(() => {
                       location.pathname === "/experience" ? "text-white" : ""
                     } group-hover:text-white group-hover:transition group-hover:duration-200 group-hover:ease-linear dark:group-hover:opacity-50`}
                   >
-                    {location.pathname === "/experience" ? "Home" : "Experience"}
+                    {location.pathname === "/experience" ? "Home" : "Career"}
                   </span>
                 </div>
               </div>

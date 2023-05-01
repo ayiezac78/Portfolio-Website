@@ -57,11 +57,11 @@ export default function BasicTabs() {
 
   return (
     <animated.section style={animation} className=" py-40 grid place-items-center">
-      <h1 className=" text-[#324B4C] font-bold dark:text-slate-50 text-2xl lg:text-4xl sm:py-10 md:py-10">
+      <h1 className=" text-[#324B4C] mb-3 md:mb-0 font-bold dark:text-slate-50 text-2xl lg:text-4xl sm:py-10 md:py-10">
         Career History
       </h1>
-      <Box className="max-w-[700px] text-black flex justify-center items-center md:flex sm:block">
-        <Box className="flex flex-row sm:max-w-[22rem]">
+      <Box className="max-w-[700px] text-black justify-center items-center md:flex block">
+        <Box className="flex flex-row max-w-[24rem]">
           <Tabs
             orientation={smallScreen ? "vertical" : "horizonal"}
             value={value}
@@ -75,7 +75,7 @@ export default function BasicTabs() {
                 width: '2px',
               }
             }}
-            className="md:border-r-[1px] md:border-b-0 sm:border-b-[1px] border-r-slate-500 border-b-slate-500"
+            className="md:border-r-[1px] md:border-b-0 border-b-[1px] border-r-slate-500 border-b-slate-500"
             textColor="#324B4C"
             aria-label="scrollable force tabs example"
           >
