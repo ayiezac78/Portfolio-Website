@@ -15,15 +15,11 @@ function createData(year, title, made, built, github_link, proj_link, descriptio
 }
 
 const rows = [
-  createData(2023, <a href="https://flowerplicity.netlify.app/">Flowerplicity</a> , <a href="https://kodego.ph/">Kodego</a>, "Bootstrap 5 • JavaScript • jQuery • CSS • HTML", <a href="https://github.com/ayiezac78/flowerplicity.git" target="_blank"><BsGithub/></a>, <a href="https://flowerplicity.netlify.app/" target='_blank'><BsBoxArrowUpRight/></a>, "It's a static web application that focus on a one-stop shop for flowers."),
-
-  createData(2023, <a href="https://clinicmp2.netlify.app/">AWR cLinic</a> , <a href="https://kodego.ph/">Kodego</a>, "Tailwind CSS • ReactJS • Laravel 9 • Restful API • MySQL", <a href="https://github.com/ayiezac78/clinic.git" target="_blank"><BsGithub/></a>, <a href="https://clinicmp2.netlify.app/" target='_blank'><BsBoxArrowUpRight/></a>, "It's a full stack web application that focus on patient's online appointments."),
-
-  createData(2023, <a href="https://adminawrclinic.netlify.app/">Admin Panel for AWR cLinic</a> , <a href="https://kodego.ph/">Kodego</a>, "Tailwind CSS • ReactJS • Laravel 9 • Restful API • MySQL", <a href="https://github.com/ayiezac78/adminclinic.git" target="_blank"><BsGithub/></a>, <a href="https://adminawrclinic.netlify.app/" target='_blank'><BsBoxArrowUpRight/></a>, "It's a full stack web application that focus on managing patient's online appointments from AWR cLinic website."),
-
-  createData(2023, 'cLinic RESTFUL API', <a href="https://kodego.ph/">Kodego</a>, "Tailwind CSS • ReactJS • Laravel 9 • Restful API • MySQL", <a href="https://github.com/ayiezac78/portfolio.git" target="_blank"><BsGithub/></a>," ", "It's an API for AWR cLinic & AWR cLinic Admin Panel"),
-
-  createData(2023, 'Porfolio Site', 'Personal', "Tailwind CSS • ReactJS • Laravel 9 • Restful API • MySQL", <a href="https://github.com/ayiezac78/portfolio.git" target="_blank"><BsGithub/></a>, <a href="https://ayiezac.netlify.app/" target='_blank'><BsBoxArrowUpRight/></a>, "It's a front-end portfolio for my projects"),
+  createData(2023, <a className='link link-hover' href="https://ayiezac.netlify.app/" target='_blank'>Portfolio Site</a>, 'Personal', "Tailwind CSS • ReactJS • Laravel 9 • Restful API • MySQL", <a href="https://github.com/ayiezac78/portfolio.git" target="_blank"><BsGithub/></a>, <a href="https://ayiezac.netlify.app/" target='_blank'><BsBoxArrowUpRight/></a>, "It's a front-end portfolio for my projects"),
+  createData(2023, 'cLinic RESTFUL API', <a className='link link-hover' href="https://kodego.ph/">Kodego</a>, "Tailwind CSS • ReactJS • Laravel 9 • Restful API • MySQL", <a href="https://github.com/ayiezac78/portfolio.git" target="_blank"><BsGithub/></a>," ", "It's an API for AWR cLinic & AWR cLinic Admin Panel"),
+  createData(2023, <a className='link link-hover' href="https://adminawrclinic.netlify.app/">Admin Panel for AWR cLinic</a> , <a className='link link-hover' href="https://kodego.ph/">Kodego</a>, "Tailwind CSS • ReactJS • Laravel 9 • Restful API • MySQL", <a href="https://github.com/ayiezac78/adminclinic.git" target="_blank"><BsGithub/></a>, <a href="https://adminawrclinic.netlify.app/" target='_blank'><BsBoxArrowUpRight/></a>, "It's a full stack web application that focus on managing patient's online appointments from AWR cLinic website."),
+  createData(2023, <a className='link link-hover' href="https://clinicmp2.netlify.app/">AWR cLinic</a> , <a className='link link-hover' href="https://kodego.ph/">Kodego</a>, "Tailwind CSS • ReactJS • Laravel 9 • Restful API • MySQL", <a href="https://github.com/ayiezac78/clinic.git" target="_blank"><BsGithub/></a>, <a href="https://clinicmp2.netlify.app/" target='_blank'><BsBoxArrowUpRight/></a>, "It's a full stack web application that focus on patient's online appointments."),
+  createData(2023, <a className='link link-hover' href="https://flowerplicity.netlify.app/">Flowerplicity</a> , <a className='link link-hover' href="https://kodego.ph/">Kodego</a>, "Bootstrap 5 • JavaScript • jQuery • CSS • HTML", <a href="https://github.com/ayiezac78/flowerplicity.git" target="_blank"><BsGithub/></a>, <a href="https://flowerplicity.netlify.app/" target='_blank'><BsBoxArrowUpRight/></a>, "It's a static web application that focus on a one-stop shop for flowers."),
 ];
 
 
@@ -55,8 +51,8 @@ export default function BasicTable() {
           </TableHead>
           <TableBody>
             {rows.map((row, index) => (
-              <TableRow key={index}>
-                <TableCell className='text-[#34554B] dark:text-white mr-10' component="th" scope="row">
+              <TableRow key={index} className='hover:bg-[#98B0A8] text-sm'>
+                <TableCell className='text-[#34554B] dark:text-white p-5' component="th" scope="row">
                   {row.year}
                 </TableCell>
                 <TableCell className='text-[#34554B] dark:text-white'>{row.title}</TableCell>
