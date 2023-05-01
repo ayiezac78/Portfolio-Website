@@ -51,7 +51,7 @@ useEffect(() => {
           </label>
           <ul
             tabIndex={0}
-            className="menu-compact dropdown-content mt-3 p-5 shadow w-52 bg-[#68807F] rounded-box"
+            className="menu-compact dropdown-content mt-3 p-5 shadow w-52 bg-[#98B0A8] rounded-box"
           >
             <li>
               <Link to={location.pathname === "/about" ? "/" : "/about"}>
@@ -94,40 +94,64 @@ useEffect(() => {
             </Link>
             </li>
             <li>
-            <Link to={location.pathname === "/experience" ? "/" : "/experience"}>
-              <div className="flex items-center mr-1 group">
-                <div className="flex items-center  p-1">
-                  {location.pathname === "/experience" ? (
-                    <FiHome className="text-white group-active:font-bold dark:text-white inline-block mr-1 md:m-1 group-hover:text-white group-hover:transition group-hover:duration-200 group-hover:ease-linear dark:group-hover:opacity-50" />
-                  ) : (
-                    <FiBriefcase className="text-[#324B4C] dark:text-white inline-block mr-1 md:m-1 group-hover:text-white group-hover:transition group-hover:duration-200 group-hover:ease-linear dark:group-hover:opacity-50" />
-                  )}
-                  <span
-                    className={`inline-block py-2 md:py-0 sm:hidden md:block ${
-                      location.pathname === "/experience" ? "text-white" : ""
-                    } group-hover:text-white group-hover:transition group-hover:duration-200 group-hover:ease-linear dark:group-hover:opacity-50`}
-                  >
-                    {location.pathname === "/experience" ? "Home" : "Career"}
-                  </span>
+              <Link to={location.pathname === "/experience" ? "/" : "/experience"}>
+                <div className="flex items-center mr-1 group">
+                  <div className="flex items-center  p-1">
+                    {location.pathname === "/experience" ? (
+                      <FiHome className="text-white group-active:font-bold dark:text-white inline-block mr-1 md:m-1 group-hover:text-white group-hover:transition group-hover:duration-200 group-hover:ease-linear dark:group-hover:opacity-50" />
+                    ) : (
+                      <FiBriefcase className="text-[#324B4C] dark:text-white inline-block mr-1 md:m-1 group-hover:text-white group-hover:transition group-hover:duration-200 group-hover:ease-linear dark:group-hover:opacity-50" />
+                    )}
+                    <span
+                      className={`inline-block py-2 md:py-0 sm:hidden md:block ${
+                        location.pathname === "/experience" ? "text-white" : ""
+                      } group-hover:text-white group-hover:transition group-hover:duration-200 group-hover:ease-linear dark:group-hover:opacity-50`}
+                    >
+                      {location.pathname === "/experience" ? "Home" : "Career"}
+                    </span>
+                  </div>
                 </div>
-              </div>
-            </Link>
+              </Link>
             </li>
             <li>
-              <div className="flex items-center mr-1">
-                <FiEdit3 className="text-[#324B4C] dark:text-white inline-block mr-2" />
-                <span className="inline-block py-2 md:py-0 sm:hidden md:block">
-                  Blog
-                </span>
-              </div>
+              <Link to={location.pathname === "/blogs" ? "/" : "/blogs"}>
+                <div className="flex items-center mr-1 group">
+                  <div className="flex items-center  p-1">
+                    {location.pathname === "/blogs" ? (
+                      <FiHome className="text-white group-active:font-bold dark:text-white inline-block mr-1 md:m-1 group-hover:text-white group-hover:transition group-hover:duration-200 group-hover:ease-linear dark:group-hover:opacity-50" />
+                    ) : (
+                      <FiBriefcase className="text-[#324B4C] dark:text-white inline-block mr-1 md:m-1 group-hover:text-white group-hover:transition group-hover:duration-200 group-hover:ease-linear dark:group-hover:opacity-50" />
+                    )}
+                    <span
+                      className={`inline-block py-2 md:py-0 sm:hidden md:block ${
+                        location.pathname === "/blogs" ? "text-white" : ""
+                      } group-hover:text-white group-hover:transition group-hover:duration-200 group-hover:ease-linear dark:group-hover:opacity-50`}
+                    >
+                      {location.pathname === "/blogs" ? "Home" : "Blogs"}
+                    </span>
+                  </div>
+                </div>
+              </Link>
             </li>
             <li>
-              <div className="flex items-center mr-1">
-                <FiMail className="text-[#324B4C] dark:text-white inline-block mr-2" />
-                <span className="inline-block py-2 md:py-0 sm:hidden md:block">
-                  Contact
-                </span>
-              </div>
+              <Link to={location.pathname === "/contact" ? "/" : "/contact"}>
+                <div className="flex items-center mr-1 group">
+                  <div className="flex items-center  p-1">
+                    {location.pathname === "/contact" ? (
+                      <FiHome className="text-white group-active:font-bold dark:text-white inline-block mr-1 md:m-1 group-hover:text-white group-hover:transition group-hover:duration-200 group-hover:ease-linear dark:group-hover:opacity-50" />
+                    ) : (
+                      <FiBriefcase className="text-[#324B4C] dark:text-white inline-block mr-1 md:m-1 group-hover:text-white group-hover:transition group-hover:duration-200 group-hover:ease-linear dark:group-hover:opacity-50" />
+                    )}
+                    <span
+                      className={`inline-block py-2 md:py-0 sm:hidden md:block ${
+                        location.pathname === "/contact" ? "text-white" : ""
+                      } group-hover:text-white group-hover:transition group-hover:duration-200 group-hover:ease-linear dark:group-hover:opacity-50`}
+                    >
+                      {location.pathname === "/contact" ? "Home" : "Contact"}
+                    </span>
+                  </div>
+                </div>
+              </Link>
             </li>
           </ul>
         </div>
@@ -278,7 +302,7 @@ useEffect(() => {
           </svg>
         </label>
 
-        <button className="btn btn-sm gap-2 text-[#324B4C] bg-[#ECFEF4] hover:border-black hover:bg-transparent dark:hover:bg-[#889FA5] dark:hover:border-white dark:hover:text-[#fff] dark:text-[#324B4C] dark:border-white font-space-mono">
+        <button className="btn btn-sm gap-2 text-[#324B4C] bg-[#ECFEF4] hover:border-black hover:bg-transparent dark:btn-outline dark:hover:border-white dark:hover:text-[#fff] dark:text-white dark:border-white font-space-mono">
           RESUME
         </button>
       </div>

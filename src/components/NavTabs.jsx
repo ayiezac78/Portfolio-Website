@@ -57,11 +57,11 @@ export default function BasicTabs() {
 
   return (
     <animated.section style={animation} className=" py-40 grid place-items-center">
-      <h1 className=" text-[#324B4C] mb-3 md:mb-0 font-bold dark:text-slate-50 text-2xl lg:text-4xl sm:py-10 md:py-10">
+      <h1 className=" text-[#324B4C] mb-3 md:mb-0 font-bold dark:text-slate-50 text-2xl md:text-4xl py-10 md:py-10">
         Career History
       </h1>
       <Box className="max-w-[700px] text-black justify-center items-center md:flex block">
-        <Box className="flex flex-row max-w-[24rem]">
+        <Box className="flex flex-row max-w-[22rem]">
           <Tabs
             orientation={smallScreen ? "vertical" : "horizonal"}
             value={value}
@@ -88,14 +88,14 @@ export default function BasicTabs() {
           </Tabs>
         </Box>
         <TabPanel value={value} index={0}>
-        <p className="mb-2 text-xl"><span className='text-[#324B4C] dark:text-white'>Bootcamp Graduate</span> <a href="https://kodego.ph/" className="text-[#384B41] link link-hover dark:text-white">@ Kodego</a></p>
+        <p className="mb-2 text-xl font-bold"><span className='text-[#324B4C] dark:text-white'>Bootcamp Graduate</span> <a href="https://kodego.ph/" className=" link link-hover dark:text-white">@ Kodego</a></p>
             <p className="mb-5 text-sm">December 2022 - April 2023</p>
               <ul>
                 <li className=" before:content-['ᐉ']"> Studied of best practices in web programming in both front-end and back-end technologies through extensive hands-on experience, peer-programming, and building real-world projects.</li>
               </ul>
         </TabPanel>
         <TabPanel value={value} index={1}>
-          <p className="mb-2 text-xl"><span className='text-[#324B4C] dark:text-white'>Medical Encoder</span> @ Safeguard DNA Diagnostics, Inc.</p>
+          <p className="mb-2 text-xl font-bold"><span className='text-[#324B4C] dark:text-white'>Medical Encoder</span> @ Safeguard DNA Diagnostics, Inc.</p>
             <p className="mb-5 text-sm">January 2021 - February 2023</p>
               <ul>
                 <li className=" before:content-['ᐉ']"> Encoding & uploading of patient's information & patient's laboratory results on laboratory's database thru web app system</li>
@@ -104,7 +104,7 @@ export default function BasicTabs() {
               </ul>
         </TabPanel>
         <TabPanel value={value} index={2}>
-          <p className="mb-2 text-xl"><span className='text-[#324B4C] dark:text-white'>Field Auditor</span> @ GNP1 Marketing</p>
+          <p className="mb-2 text-xl font-bold"><span className='text-[#324B4C] dark:text-white'>Field Auditor</span> @ GNP1 Marketing</p>
             <p className="mb-5 text-sm">June 2019 - March 2020</p>
               <ul>
                 <li className=" before:content-['ᐉ']"> Doing field audits of accountability of daily sales personnel and store client audit visitation.</li>
@@ -113,7 +113,7 @@ export default function BasicTabs() {
               </ul>
         </TabPanel>
         <TabPanel value={value} index={3}>
-          <p className="mb-2 text-xl"><span className='text-[#324B4C] dark:text-white'>Freelance Videographer</span> @ Island Living Channel</p>
+          <p className="mb-2 text-xl font-bold"><span className='text-[#324B4C] dark:text-white'>Freelance Videographer</span> @ Island Living Channel</p>
           <p className="mb-5 text-sm">January - April 2019</p>
             <ul>
               <li className=" before:content-['ᐉ']"> Taking video clips of different events and sceneries.</li>
@@ -121,7 +121,7 @@ export default function BasicTabs() {
             </ul>
         </TabPanel>
         <TabPanel value={value} index={4}>
-          <p className="mb-2 text-xl"><span className='text-[#324B4C] dark:text-white'>Loan Officer</span>  <a href="https://nwtf.org.ph/" className="text-[#384B41] link link-hover dark:text-white">@ Negros Women for Tomorrow Foundation, Inc.</a></p>
+          <p className="mb-2 text-xl font-bold"><span className='text-[#324B4C] dark:text-white'>Loan Officer</span>  <a href="https://nwtf.org.ph/" className="link link-hover dark:text-white">@ Negros Women for Tomorrow Foundation, Inc.</a></p>
           <p className="mb-5 text-sm">October 2016 - January 2019</p>
             <ul>
               <li className=" before:content-['ᐉ']"> Process Loan Application</li>
