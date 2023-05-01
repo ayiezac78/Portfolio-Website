@@ -14,9 +14,9 @@ const About = () => {
     config: { duration: 1000 },
   });
   return (
-    <animated.section style={animation} className="hero min-h-screen w-full px-4 pt-64 md:pt-0 grid grid-cols-1 sm:grid-cols-2 place-items-center gap-4 text-white">
-        <div className="relative text-justify sm:text-left">
-          <h1 className="text-2xl md:text-3xl font-bold mb-5 text-[#324B4C] dark:text-white mt-14">
+    <animated.section style={animation} className="hero min-h-screen w-full px-4 pt-52 md:pt-0 grid grid-cols-1 sm:grid-cols-2 place-items-center gap-4 text-white">
+        <div className="relative text-left sm:text-left">
+          <h1 className="text-2xl md:text-3xl font-bold mb-5 text-[#324B4C] dark:text-white pt-28">
             Self Overview
           </h1>
           <hr className="mb-5 border border-gray-500" />
@@ -38,9 +38,9 @@ const About = () => {
             Tech Stack:
           </h2>
           <div className="grid grid-cols-3 gap-4 text-[#324B4C] dark:text-white font-semibold text-center">
-            <div className="text-normal mb-2 mr-auto">Front-end</div>
-            <div className="text-normal mb-2">Back-end</div>
-            <div className="text-normal mb-2">Others</div>
+            <div className="mb-2 mr-auto">Front-end</div>
+            <div className="mb-2">Back-end</div>
+            <div className="mb-2">Others</div>
           </div>
           <Skills />
           <div className="mb-10">

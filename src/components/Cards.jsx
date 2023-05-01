@@ -7,7 +7,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import { createTheme, ThemeProvider, useMediaQuery } from '@mui/material';
+import { createTheme, ThemeProvider, useMediaQuery, makeStyles } from '@mui/material';
 
 
 function createData(year, title, made, built, github_link, proj_link, description) {
@@ -42,25 +42,25 @@ export default function BasicTable() {
         <Table aria-label="simple table">
           <TableHead className='shadow'>
             <TableRow>
-              <TableCell>Year</TableCell>
-              <TableCell>Title</TableCell>
-              {isLgScreen && <TableCell>Description</TableCell>}
-              {isLgScreen && <TableCell>Made at</TableCell>}
-              {isLgScreen && <TableCell>Built with</TableCell>}
-              <TableCell>Link</TableCell>
+              <TableCell style={{ color: '#F2ECFF' }}>Year</TableCell>
+              <TableCell style={{ color: '#F2ECFF' }}>Title</TableCell>
+              {isLgScreen && <TableCell style={{ color: '#F2ECFF' }}>Description</TableCell>}
+              {isLgScreen && <TableCell style={{ color: '#F2ECFF' }}>Made at</TableCell>}
+              {isLgScreen && <TableCell style={{ color: '#F2ECFF' }}>Built with</TableCell>}
+              <TableCell style={{ color: '#F2ECFF' }}>Link</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {rows.map((row, index) => (
               <TableRow key={index}>
-                <TableCell component="th" scope="row">
+                <TableCell style={{ color: '#EDFDF5' }} component="th" scope="row">
                   {row.year}
                 </TableCell>
-                <TableCell>{row.title}</TableCell>
-                {isLgScreen && <TableCell>{row.description}</TableCell>}
-                {isLgScreen && <TableCell>{row.made}</TableCell>}
-                {isLgScreen && <TableCell>{row.built}</TableCell>}
-                <TableCell>
+                <TableCell style={{ color: '#EDFDF5' }}>{row.title}</TableCell>
+                {isLgScreen && <TableCell style={{ color: '#EDFDF5' }}>{row.description}</TableCell>}
+                {isLgScreen && <TableCell style={{ color: '#EDFDF5' }}>{row.made}</TableCell>}
+                {isLgScreen && <TableCell style={{ color: '#EDFDF5' }}>{row.built}</TableCell>}
+                <TableCell style={{ color: '#EDFDF5' }}>
                   <div className="flex gap-2">
                     {row.github_link} {row.proj_link}
                   </div>
