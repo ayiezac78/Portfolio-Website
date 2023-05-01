@@ -14,9 +14,9 @@ const About = () => {
     config: { duration: 1000 },
   });
   return (
-    <animated.section style={animation} className="w-full px-4 pt-52 md:pt-10 grid grid-cols-1 sm:grid-cols-2 place-items-center gap-4 text-white">
+    <animated.section style={animation} className="w-full px-4 pt-36 md:pt-10 grid grid-cols-1 sm:grid-cols-2 place-items-center gap-4 text-white">
         <div className="relative text-left sm:text-left">
-          <h1 className="text-2xl md:text-3xl font-bold mb-5 text-[#324B4C] dark:text-white pt-28">
+          <h1 className="text-2xl md:text-3xl font-bold mb-5 text-[#324B4C] dark:text-white pt-36">
             Self Overview
           </h1>
           <hr className="mb-5 border border-gray-500" />
@@ -46,7 +46,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="image-container absolute top-42 right-10 lg:right-32 hidden md:block ">
+        <div className="image-container absolute md:top-52 right-10 lg:right-32 hidden md:block ">
           <img
             src={meChat}
             alt="your-image-description"

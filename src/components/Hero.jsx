@@ -26,7 +26,7 @@ const Hero = () => {
             I build things for the web.
           </h2>
           <p className='text-[#324B4C] mb-5 dark:text-white'>I am a web developer that passionate about building beautiful and functional web applications.</p>
-          <Link to='/about' className='btn btn-sm text-white hover:opacity-80 bg-[#324B4C]'>About Me <HiOutlineArrowLongRight className='ml-2' size={20}/></Link>
+          <Link to='/about' className='btn btn-sm btn-active dark:btn-outline btn-ghost outline outline-2 text-[#324B4C] gap-2'>About Me <HiOutlineArrowLongRight className='ml-2' size={20}/></Link>
         </div>
       </div>
     </animated.section>
