@@ -37,7 +37,7 @@ const Footer = () => {
           <FiLinkedin className="h-4 w-4 md:h-5 md:w-5 text-[#324B4C] mb-3 md:mb-0 dark:text-white hover:text-gray-500 dark:hover:text-gray-400 transition duration-300 ease-in-out" />
         </a>
       </div>
-        <p>design & coded by ayie©</p>
+        <p>designed & coded by ayie©</p>
       </div>
     </div>
   );
