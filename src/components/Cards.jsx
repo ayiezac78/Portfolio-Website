@@ -26,11 +26,14 @@ const rows = [
   createData(2023, 'Porfolio Site', 'Personal', "Tailwind CSS • ReactJS • Laravel 9 • Restful API • MySQL", <a href="https://github.com/ayiezac78/portfolio.git" target="_blank"><BsGithub/></a>, <a href="https://ayiezac.netlify.app/" target='_blank'><BsBoxArrowUpRight/></a>, "It's a front-end portfolio for my projects"),
 ];
 
+
 const theme = createTheme({
   typography:{
     fontFamily: `'Space Mono', monospace'`,
-  }
+  },
 });
+
+
 
 
 export default function BasicTable() {
@@ -42,7 +45,7 @@ export default function BasicTable() {
         <Table aria-label="simple table">
           <TableHead className='shadow'>
             <TableRow>
-              <TableCell style={{ color: '#34554B' }}>Year</TableCell>
+              <TableCell className='text-[#34554B] dark:text-white'>Year</TableCell>
               <TableCell style={{ color: '#34554B' }}>Title</TableCell>
               {isLgScreen && <TableCell style={{ color: '#34554B' }}>Description</TableCell>}
               {isLgScreen && <TableCell style={{ color: '#34554B' }}>Made at</TableCell>}
