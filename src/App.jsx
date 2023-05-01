@@ -10,6 +10,7 @@ import Portfolio from './components/Portfolio';
 import NavTabs from './components/NavTabs';
 import Blog from './assets/pages/Blog';
 import Contact from './assets/pages/Contact';
+import { StyledEngineProvider } from '@mui/material';
 
 
 function App() {
@@ -46,33 +47,36 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className='flex justify-center items-center h-screen w-full font-space-mono'>
-        {
-          isLoading ?
-          <HashLoader
-          color={'#98A59E'}
-          loading={isLoading}
-          size={50}
-          aria-label="Loading Spinner"
-          data-testid="loader"
-        />
-          :
-          <div className={`w-full bg-[#98A59E] dark:bg-gray-800 dark:transition-all dark:duration-300 dark:ease-in-out transition-all duration-300 ease-in-out mx-auto px-4`}>
-            <NavigationBar theme={theme} toggleMode={toggleMode} />
-            <main className='min-h-screen'>
-              <Routes>
-                <Route path='/' element={<Hero />}/>
-                <Route path='/about' element={<About/>}/>
-                <Route path='/portfolio' element={<Portfolio/>}/>
-                <Route path='/experience' element={<NavTabs/>}/>
-                <Route path='/blogs' element={<Blog/>}/>
-                <Route path='/contact' element={<Contact/>}/>
-              </Routes>
-            </main>
-            <Footer/>
-          </div>
-        }
-      </div>
+      <StyledEngineProvider injectFirst>
+        <div className="flex justify-center items-center h-screen w-full font-space-mono">
+          {isLoading ? (
+            <HashLoader
+              color={"#98A59E"}
+              loading={isLoading}
+              size={50}
+              aria-label="Loading Spinner"
+              data-testid="loader"
+            />
+          ) : (
+            <div
+              className={`w-full bg-[#98A59E] dark:bg-gray-800 dark:transition-all dark:duration-300 dark:ease-in-out transition-all duration-300 ease-in-out mx-auto px-4`}
+            >
+              <NavigationBar theme={theme} toggleMode={toggleMode} />
+              <main className="min-h-screen">
+                <Routes>
+                  <Route path="/" element={<Hero />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="/portfolio" element={<Portfolio />} />
+                  <Route path="/experience" element={<NavTabs />} />
+                  <Route path="/blogs" element={<Blog />} />
+                  <Route path="/contact" element={<Contact />} />
+                </Routes>
+              </main>
+              <Footer />
+            </div>
+          )}
+        </div>
+      </StyledEngineProvider>
     </BrowserRouter>
   );
 }
