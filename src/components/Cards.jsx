@@ -46,24 +46,24 @@ export default function BasicTable() {
           <TableHead className='shadow'>
             <TableRow>
               <TableCell className='text-[#34554B] dark:text-white'>Year</TableCell>
-              <TableCell style={{ color: '#34554B' }}>Title</TableCell>
-              {isLgScreen && <TableCell style={{ color: '#34554B' }}>Description</TableCell>}
-              {isLgScreen && <TableCell style={{ color: '#34554B' }}>Made at</TableCell>}
-              {isLgScreen && <TableCell style={{ color: '#34554B' }}>Built with</TableCell>}
-              <TableCell style={{ color: '#34554B' }}>Link</TableCell>
+              <TableCell className='text-[#34554B] dark:text-white'>Title</TableCell>
+              {isLgScreen && <TableCell className='text-[#34554B] dark:text-white'>Description</TableCell>}
+              {isLgScreen && <TableCell className='text-[#34554B] dark:text-white'>Made at</TableCell>}
+              {isLgScreen && <TableCell className='text-[#34554B] dark:text-white'>Built with</TableCell>}
+              <TableCell className='text-[#34554B] dark:text-white'>Link</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {rows.map((row, index) => (
               <TableRow key={index}>
-                <TableCell style={{ color: '#34554B', marginRight: '10px' }} component="th" scope="row">
+                <TableCell className='text-[#34554B] dark:text-white mr-10' component="th" scope="row">
                   {row.year}
                 </TableCell>
-                <TableCell style={{ color: '#34554B' }}>{row.title}</TableCell>
-                {isLgScreen && <TableCell style={{ color: '#34554B' }}>{row.description}</TableCell>}
-                {isLgScreen && <TableCell style={{ color: '#34554B' }}>{row.made}</TableCell>}
-                {isLgScreen && <TableCell style={{ color: '#34554B' }}>{row.built}</TableCell>}
-                <TableCell style={{ color: '#34554B' }}>
+                <TableCell className='text-[#34554B] dark:text-white'>{row.title}</TableCell>
+                {isLgScreen && <TableCell className='text-[#34554B] dark:text-white'>{row.description}</TableCell>}
+                {isLgScreen && <TableCell className='text-[#34554B] dark:text-white'>{row.made}</TableCell>}
+                {isLgScreen && <TableCell className='text-[#34554B] dark:text-white'>{row.built}</TableCell>}
+                <TableCell className='text-[#34554B] dark:text-white'>
                   <div className="flex gap-2">
                     {row.github_link} {row.proj_link}
                   </div>
