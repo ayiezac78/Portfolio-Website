@@ -10,7 +10,7 @@ const Hero = () => {
     config: { duration: 1000 },
   });
   return (
-    <animated.section style={animation} className="py-10 md:py-32 sm:py-28 min-h-screen">
+    <animated.section style={animation} className="py-10 md:py-32 sm:py-28 min-h-screen hero">
       <div className="grid grid-cols-1 md:grid-cols-1 place-content-center place-items-center gap-5 md:gap-10 text-white p-5 sm:py-32 md:py-32 lg:py-32 h-full">
         <div className="flex flex-col lg:justify-center lg:items-center ">
           <p className="text-[#324B4C] mb-2 text-lg md:text-xl font-bold dark:text-white">
@@ -26,7 +26,7 @@ const Hero = () => {
             I build things for the web.
           </h2>
           <p className='text-[#324B4C] mb-5 dark:text-white'>I am a web developer that passionate about building beautiful and functional web applications.</p>
-          <Link to='/about' className='btn text-white btn-sm md:w-36 sm:w-32 bg-[#324B4C]'>About Me <HiOutlineArrowLongRight className='ml-2' size={20}/></Link>
+          <Link to='/about' className='btn btn-sm text-white bg-[#324B4C]'>About Me <HiOutlineArrowLongRight className='ml-2' size={20}/></Link>
         </div>
       </div>
     </animated.section>

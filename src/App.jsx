@@ -8,7 +8,8 @@ import Footer from './components/Footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Portfolio from './components/Portfolio';
 import NavTabs from './components/NavTabs';
-
+import Blog from './assets/pages/Blog';
+import Contact from './assets/pages/Contact';
 
 
 function App() {
@@ -64,6 +65,8 @@ function App() {
                 <Route path='/about' element={<About/>}/>
                 <Route path='/portfolio' element={<Portfolio/>}/>
                 <Route path='/experience' element={<NavTabs/>}/>
+                <Route path='/blogs' element={<Blog/>}/>
+                <Route path='/contact' element={<Contact/>}/>
               </Routes>
             </main>
             <Footer/>

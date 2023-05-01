@@ -1,5 +1,5 @@
 import meChat from "../images/me.jpeg";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useSpring, animated } from "@react-spring/web";
 import "../styles/blurbgnavbar.css";
 import "../styles/blink-animation.css";
@@ -8,17 +8,15 @@ import { HiOutlineFolder } from "react-icons/hi";
 import "../styles/card.css";
 
 const About = () => {
-  const location = useLocation();
   const animation = useSpring({
     opacity: 1,
     from: { opacity: 0 },
     config: { duration: 1000 },
   });
   return (
-    <animated.section style={animation} className="md:py-20 lg:py-10 xl:py-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 place-items-center gap-2 md:gap-10 text-white sm:py-32 md:py-20 lg:py-20 mt-32">
-        <div className="relative">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-5 text-[#324B4C] dark:text-white">
+    <animated.section style={animation} className="hero min-h-screen w-full px-4 pt-64 md:pt-0 grid grid-cols-1 sm:grid-cols-2 place-items-center gap-4 text-white">
+        <div className="relative text-justify sm:text-left">
+          <h1 className="text-2xl md:text-3xl font-bold mb-5 text-[#324B4C] dark:text-white mt-14">
             Self Overview
           </h1>
           <hr className="mb-5 border border-gray-500" />
@@ -45,7 +43,7 @@ const About = () => {
             <div className="text-normal mb-2">Others</div>
           </div>
           <Skills />
-          <div>
+          <div className="mb-10">
             <p className="text-[#324B4C] dark:text-slate-50">
               Checkout my recent{" "}
               <Link to="/portfolio" className="link link-hover">
@@ -55,19 +53,18 @@ const About = () => {
             </p>
           </div>
         </div>
-        {/* <div>
-          <img src={meChat} alt="bubble chat" className='w-80 rounded-lg hover:opacity-100 transition ease-in-out duration-100 md:block sm:hidden opacity-70 object-contain hover:-translate-y-2 hover:-translate-x-2 hover:border-b-4 hover:border-r-4 border-b-slate-500 border-r-slate-500 border-dashed' />
-        </div> */}
-        <div className="image-container">
+        <div className="image-container absolute top-42 right-10 lg:right-32 hidden md:block ">
           <img
             src={meChat}
             alt="your-image-description"
-            className="w-80 sm:hidden md:block rounded-lg hover:shadow-lg"
+            className="w-80 rounded-lg hover:shadow-lg"
           />
         </div>
-      </div>
     </animated.section>
   );
 };
 
 export default About;
+        {/* <div>
+          <img src={meChat} alt="bubble chat" className='w-80 rounded-lg hover:opacity-100 transition ease-in-out duration-100 md:block sm:hidden opacity-70 object-contain hover:-translate-y-2 hover:-translate-x-2 hover:border-b-4 hover:border-r-4 border-b-slate-500 border-r-slate-500 border-dashed' />
+        </div> */}

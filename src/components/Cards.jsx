@@ -1,27 +1,75 @@
-import {BsTags} from 'react-icons/bs';
+import * as React from 'react';
+import {BsFolder, BsGithub, BsBoxArrowUpRight} from 'react-icons/bs';
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import Paper from '@mui/material/Paper';
+import { createTheme, ThemeProvider, useMediaQuery } from '@mui/material';
 
-const Cards = ({ title, description, icon, github_icon, livesite_icon,tags }) => {
+
+function createData(year, title, made, built, github_link, proj_link, description) {
+  return { year, title, made, built, github_link, proj_link, description};
+}
+
+const rows = [
+  createData(2023, <a href="https://flowerplicity.netlify.app/">Flowerplicity</a> , <a href="https://kodego.ph/">Kodego</a>, "Bootstrap 5 • JavaScript • jQuery • CSS • HTML", <a href="https://github.com/ayiezac78/flowerplicity.git" target="_blank"><BsGithub/></a>, <a href="https://flowerplicity.netlify.app/" target='_blank'><BsBoxArrowUpRight/></a>, "It's a static web application that focus on a one-stop shop for flowers."),
+
+  createData(2023, <a href="https://clinicmp2.netlify.app/">AWR cLinic</a> , <a href="https://kodego.ph/">Kodego</a>, "Tailwind CSS • ReactJS • Laravel 9 • Restful API • MySQL", <a href="https://github.com/ayiezac78/clinic.git" target="_blank"><BsGithub/></a>, <a href="https://clinicmp2.netlify.app/" target='_blank'><BsBoxArrowUpRight/></a>, "It's a full stack web application that focus on patient's online appointments."),
+
+  createData(2023, <a href="https://adminawrclinic.netlify.app/">Admin Panel for AWR cLinic</a> , <a href="https://kodego.ph/">Kodego</a>, "Tailwind CSS • ReactJS • Laravel 9 • Restful API • MySQL", <a href="https://github.com/ayiezac78/adminclinic.git" target="_blank"><BsGithub/></a>, <a href="https://adminawrclinic.netlify.app/" target='_blank'><BsBoxArrowUpRight/></a>, "It's a full stack web application that focus on managing patient's online appointments from AWR cLinic website."),
+
+  createData(2023, 'cLinic RESTFUL API', <a href="https://kodego.ph/">Kodego</a>, "Tailwind CSS • ReactJS • Laravel 9 • Restful API • MySQL", <a href="https://github.com/ayiezac78/portfolio.git" target="_blank"><BsGithub/></a>," ", "It's an API for AWR cLinic & AWR cLinic Admin Panel"),
+
+  createData(2023, 'Porfolio Site', 'Personal', "Tailwind CSS • ReactJS • Laravel 9 • Restful API • MySQL", <a href="https://github.com/ayiezac78/portfolio.git" target="_blank"><BsGithub/></a>, <a href="https://ayiezac.netlify.app/" target='_blank'><BsBoxArrowUpRight/></a>, "It's a front-end portfolio for my projects"),
+];
+
+const theme = createTheme({
+  typography:{
+    fontFamily: `'Space Mono', monospace'`,
+  }
+});
+
+
+export default function BasicTable() {
+  const isLgScreen = useMediaQuery(theme.breakpoints.up('lg'));
+
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow bg-[#829993] mx-auto mb-4 hover:-translate-y-1 duration-200 transition-all ease-in-out hover:shadow-xl">
-      <div className="px-6 py-4">
-        <div className="flex justify-between content-start mb-4">
-          {icon}
-          <div className="px-0 py-4 flex justify-end gap-3">
-            {github_icon}
-            {livesite_icon}
-          </div>
-        </div>
-        <div className="font-bold text-xl mb-2 text-[#324B4C]">{title}</div>
-        <p className="text-[#324B4C]">{description}</p>
-      </div>
-      <hr className="border border-gray-400"/>
-      <div className="px-6 py-4 flex justify-start text-xs text-gray-600 gap-2">
-        <BsTags className='h-5 w-5'/>
-        {tags}
-      </div>
-    </div>
+    <ThemeProvider theme={theme}>
+      <TableContainer>
+        <Table aria-label="simple table">
+          <TableHead className='shadow'>
+            <TableRow>
+              <TableCell>Year</TableCell>
+              <TableCell>Title</TableCell>
+              {isLgScreen && <TableCell>Description</TableCell>}
+              {isLgScreen && <TableCell>Made at</TableCell>}
+              {isLgScreen && <TableCell>Built with</TableCell>}
+              <TableCell>Link</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {rows.map((row, index) => (
+              <TableRow key={index}>
+                <TableCell component="th" scope="row">
+                  {row.year}
+                </TableCell>
+                <TableCell>{row.title}</TableCell>
+                {isLgScreen && <TableCell>{row.description}</TableCell>}
+                {isLgScreen && <TableCell>{row.made}</TableCell>}
+                {isLgScreen && <TableCell>{row.built}</TableCell>}
+                <TableCell>
+                  <div className="flex gap-2">
+                    {row.github_link} {row.proj_link}
+                  </div>
+                </TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
+    </ThemeProvider>
   );
-};
-
-
-export default Cards
+}
