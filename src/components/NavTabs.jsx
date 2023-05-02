@@ -88,7 +88,7 @@ export default function BasicTabs() {
           </Tabs>
         </Box>
         <TabPanel value={value} index={0}>
-        <p className="mb-2 text-xl font-bold"><span className='text-[#324B4C] dark:text-white'>Bootcamp Graduate</span> <a href="https://kodego.ph/" className=" link link-hover dark:text-white">@ Kodego</a></p>
+        <p className="mb-2 text-xl font-bold"><span className='text-[#324B4C] dark:text-white'>Full-stack Web Developer Trainee</span> <a href="https://kodego.ph/" className=" link link-hover dark:text-white">@ Kodego</a></p>
             <p className="mb-5 text-sm">December 2022 - April 2023</p>
               <ul>
                 <li className=" before:content-['ᐉ']"> Database administration and website design</li>
