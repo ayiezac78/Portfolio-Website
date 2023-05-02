@@ -22,7 +22,7 @@ const Hero = () => {
           <p className="text-[#324B4C] mb-2 text-lg md:text-xl font-bold dark:text-white">
             Hi, my name is
           </p>
-          <h1 className="text-4xl text-[#324B4C] md:text-7xl mb-3 dark:text-white">
+          <h1 className="text-4xl font-bold text-[#324B4C] md:text-7xl mb-3 dark:text-white">
             Ariel Maniago
             <span className="relative lg:right-5 md:right-[21px] sm:right-[10px] blink font-bold">
               |
