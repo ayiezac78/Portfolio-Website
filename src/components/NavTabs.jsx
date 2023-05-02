@@ -91,50 +91,50 @@ export default function BasicTabs() {
         <p className="mb-2 text-xl font-bold"><span className='text-[#324B4C] dark:text-white'>Bootcamp Graduate</span> <a href="https://kodego.ph/" className=" link link-hover dark:text-white">@ Kodego</a></p>
             <p className="mb-5 text-sm">December 2022 - April 2023</p>
               <ul>
-                <li className=" before:content-['ᐉ']"> Studied of best practices in web programming in both front-end and back-end technologies through extensive hands-on experience, peer-programming, and building real-world projects.</li>
+                <li className=" before:content-['ᐉ']"> Gained expertise in best practices for both front-end and back-end web programming through extensive hands-on experience, peer programming, and building real-world projects</li>
               </ul>
         </TabPanel>
         <TabPanel value={value} index={1}>
           <p className="mb-2 text-xl font-bold"><span className='text-[#324B4C] dark:text-white'>Medical Encoder</span> @ Safeguard DNA Diagnostics, Inc.</p>
             <p className="mb-5 text-sm">January 2021 - February 2023</p>
               <ul>
-                <li className=" before:content-['ᐉ']"> Encoding & uploading of patient's information & patient's laboratory results on laboratory's database thru web app system</li>
-                <li className=" before:content-['ᐉ']"> Outbound calls to the patient by verifying their basic information for contact tracing purposes</li>
-                <li className=" before:content-['ᐉ']"> Consolidating & verifying the CDRS reports of patient's laboratory results before passing the report to DOH</li>
+                <li className=" before:content-['ᐉ']"> Encoding and uploading patient information and laboratory results onto the laboratory's database through a web application system</li>
+                <li className=" before:content-['ᐉ']"> Outbound calls to patients to verify their basic information for contact tracing purposes</li>
+                <li className=" before:content-['ᐉ']"> Consolidating and verifying patient information & patient laboratory results in the CDRS report before submitting it to the Department of Health (DOH)</li>
               </ul>
         </TabPanel>
         <TabPanel value={value} index={2}>
           <p className="mb-2 text-xl font-bold"><span className='text-[#324B4C] dark:text-white'>Field Auditor</span> @ GNP1 Marketing</p>
             <p className="mb-5 text-sm">June 2019 - March 2020</p>
               <ul>
-                <li className=" before:content-['ᐉ']"> Doing field audits of accountability of daily sales personnel and store client audit visitation.</li>
-                <li className=" before:content-['ᐉ']"> Outbound call audit of existing clients</li>
-                <li className=" before:content-['ᐉ']"> Monthly warehouse audit and balancing the remittance monitoring</li>
+                <li className=" before:content-['ᐉ']"> Conducted field audits to ensure accountability of daily sales personnel and visited stores to audit client interactions</li>
+                <li className=" before:content-['ᐉ']"> Conducted outbound call audits of existing clients</li>
+                <li className=" before:content-['ᐉ']"> Conducted monthly audits & reports of the warehouse and monitored remittances to ensure accuracy and balance</li>
               </ul>
         </TabPanel>
         <TabPanel value={value} index={3}>
           <p className="mb-2 text-xl font-bold"><span className='text-[#324B4C] dark:text-white'>Freelance Videographer</span> @ Island Living Channel</p>
           <p className="mb-5 text-sm">January - April 2019</p>
             <ul>
-              <li className=" before:content-['ᐉ']"> Taking video clips of different events and sceneries.</li>
-              <li className=" before:content-['ᐉ']"> Assisting Lead Videographer of different tools for videography</li>
+              <li className=" before:content-['ᐉ']"> Capturing video clips of various events and scenic locations</li>
+              <li className=" before:content-['ᐉ']"> Assisted the Lead Videographer in using various tools for videography</li>
             </ul>
         </TabPanel>
         <TabPanel value={value} index={4}>
           <p className="mb-2 text-xl font-bold"><span className='text-[#324B4C] dark:text-white'>Loan Officer</span>  <a href="https://nwtf.org.ph/" className="link link-hover dark:text-white">@ Negros Women for Tomorrow Foundation, Inc.</a></p>
           <p className="mb-5 text-sm">October 2016 - January 2019</p>
             <ul>
-              <li className=" before:content-['ᐉ']"> Process Loan Application</li>
-              <li className=" before:content-['ᐉ']"> Montly reportings of loan portfolios</li>
-              <li className=" before:content-['ᐉ']"> Conducting center meetings in different areas.</li>
-              <li className=" before:content-['ᐉ']"> Markets of different products of the company including productive and non-productive</li>
+              <li className=" before:content-['ᐉ']"> Processed client's loan applications, reviewing documentation and conducting interviews to determine eligibility and make lending decisions</li>
+              <li className=" before:content-['ᐉ']"> Monthly reporting of loan portfolios & loan disbursements</li>
+              <li className=" before:content-['ᐉ']"> Conducting weekly meetings at various centers and collecting weekly repayments in different areas</li>
+              <li className=" before:content-['ᐉ']"> Markets various products, including both productive and non-productive loans</li>
             </ul>
         </TabPanel>
         <TabPanel value={value} index={5}>
           <p className="mb-2 text-xl"><span className='text-[#324B4C] dark:text-white'>BS Information Technology</span> @ Binalbagan Catholic College</p>
           <p className="mb-5 text-sm">June 2011 - April 2015</p>
           <ul>
-              <li className=" before:content-['ᐉ']"> Studied of different fields in Information Techonology, primarily in the field of computer network systems, programming & multimedias</li>
+              <li className=" before:content-['ᐉ']"> I have extensive experience studying various disciplines within the field of Information Technology, with a particular emphasis on computer network systems, programming, and multimedia.</li>
             </ul>
         </TabPanel>
       </Box>

@@ -5,6 +5,7 @@ import '../assets/styles/blurbgnavbar.css'
 import NavMenuLinks from './NavMenuLinks';
 import {FiUser, FiHome, FiFolder, FiEdit3, FiMail, FiBriefcase} from 'react-icons/fi'
 import { Link, useLocation } from 'react-router-dom'
+import resume from '../assets/Maniago_Resume.pdf'
 
 
 const NavigationBar = (props) => {
@@ -15,6 +16,11 @@ const NavigationBar = (props) => {
     setIconClicked(!iconClicked); // toggle the state
     props.toggleMode(); // call the toggleMode function from props
   };
+
+  const toggleClicked = () =>{
+    const el = document.activeElement
+    el?.blur()
+  }
 
 useEffect(() => {
   const handleScroll = () => {
@@ -28,6 +34,7 @@ useEffect(() => {
   window.addEventListener('scroll', handleScroll);
   return () => window.removeEventListener('scroll', handleScroll);
 }, []);
+
 
   return (
     <div className="navbar w-full fixed top-0 left-0 px-4 z-10 shadow">
@@ -51,9 +58,9 @@ useEffect(() => {
           </label>
           <ul
             tabIndex={0}
-            className="menu-compact dropdown-content mt-3 p-5 shadow w-52 bg-[#98B0A8] rounded-box"
+            className="menu-compact dropdown-content mt-3 p-5 shadow w-52 bg-[#98B0A8] dark:bg-slate-800 rounded-box"
           >
-            <li>
+            <li onClick={toggleClicked}>
               <Link to={location.pathname === "/about" ? "/" : "/about"}>
                 <div className="flex items-center mr-1 group">
                   <div className="flex items-center p-1">
@@ -73,7 +80,7 @@ useEffect(() => {
                 </div>
               </Link>
             </li>
-            <li>
+            <li onClick={toggleClicked}>
             <Link to={location.pathname === "/portfolio" ? "/" : "/portfolio"}>
               <div className="flex items-center mr-1 group">
                 <div className="flex items-center  p-1">
@@ -93,7 +100,7 @@ useEffect(() => {
               </div>
             </Link>
             </li>
-            <li>
+            <li onClick={toggleClicked}>
               <Link to={location.pathname === "/experience" ? "/" : "/experience"}>
                 <div className="flex items-center mr-1 group">
                   <div className="flex items-center  p-1">
@@ -113,14 +120,14 @@ useEffect(() => {
                 </div>
               </Link>
             </li>
-            <li>
+            <li onClick={toggleClicked}>
               <Link to={location.pathname === "/blogs" ? "/" : "/blogs"}>
                 <div className="flex items-center mr-1 group">
                   <div className="flex items-center  p-1">
                     {location.pathname === "/blogs" ? (
                       <FiHome className="text-white group-active:font-bold dark:text-white inline-block mr-1 md:m-1 group-hover:text-white group-hover:transition group-hover:duration-200 group-hover:ease-linear dark:group-hover:opacity-50" />
                     ) : (
-                      <FiBriefcase className="text-[#324B4C] dark:text-white inline-block mr-1 md:m-1 group-hover:text-white group-hover:transition group-hover:duration-200 group-hover:ease-linear dark:group-hover:opacity-50" />
+                      <FiEdit3 className="text-[#324B4C] dark:text-white inline-block mr-1 md:m-1 group-hover:text-white group-hover:transition group-hover:duration-200 group-hover:ease-linear dark:group-hover:opacity-50" />
                     )}
                     <span
                       className={`inline-block py-2 md:py-0 sm:hidden md:block ${
@@ -133,14 +140,14 @@ useEffect(() => {
                 </div>
               </Link>
             </li>
-            <li>
+            <li onClick={toggleClicked}>
               <Link to={location.pathname === "/contact" ? "/" : "/contact"}>
                 <div className="flex items-center mr-1 group">
                   <div className="flex items-center  p-1">
                     {location.pathname === "/contact" ? (
                       <FiHome className="text-white group-active:font-bold dark:text-white inline-block mr-1 md:m-1 group-hover:text-white group-hover:transition group-hover:duration-200 group-hover:ease-linear dark:group-hover:opacity-50" />
                     ) : (
-                      <FiBriefcase className="text-[#324B4C] dark:text-white inline-block mr-1 md:m-1 group-hover:text-white group-hover:transition group-hover:duration-200 group-hover:ease-linear dark:group-hover:opacity-50" />
+                      <FiMail className="text-[#324B4C] dark:text-white inline-block mr-1 md:m-1 group-hover:text-white group-hover:transition group-hover:duration-200 group-hover:ease-linear dark:group-hover:opacity-50" />
                     )}
                     <span
                       className={`inline-block py-2 md:py-0 sm:hidden md:block ${
@@ -302,9 +309,9 @@ useEffect(() => {
           </svg>
         </label>
 
-        <button className="btn btn-sm gap-2 text-[#324B4C] bg-[#ECFEF4] hover:border-black hover:bg-transparent dark:btn-outline dark:hover:border-white dark:hover:text-[#fff] dark:text-white dark:border-white font-space-mono">
+        <a href={resume} target='_blank' className="btn btn-sm gap-2 text-[#324B4C] bg-[#ECFEF4] hover:border-black hover:bg-transparent dark:btn-outline dark:hover:border-white dark:hover:text-[#fff] dark:text-white dark:border-white font-space-mono">
           RESUME
-        </button>
+        </a>
       </div>
     </div>
   );

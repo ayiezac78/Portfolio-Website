@@ -2,6 +2,7 @@ import {HiOutlineArrowLongRight} from 'react-icons/hi2'
 import '../assets/styles/blink-animation.css'
 import { useSpring, animated } from '@react-spring/web';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const Hero = () => {
   const animation = useSpring({
@@ -9,6 +10,11 @@ const Hero = () => {
     from: { opacity: 0 },
     config: { duration: 1000 },
   });
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <animated.section style={animation} className="py-10 md:py-32 sm:py-28 min-h-screen hero">
       <div className="grid grid-cols-1 md:grid-cols-1 place-content-center place-items-center gap-5 md:gap-10 text-white p-5 sm:py-32 md:py-32 lg:py-32 h-full">

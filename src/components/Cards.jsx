@@ -51,7 +51,7 @@ export default function BasicTable() {
           </TableHead>
           <TableBody>
             {rows.map((row, index) => (
-              <TableRow key={index} className='hover:bg-[#98B0A8] text-sm'>
+              <TableRow key={index} className='hover:bg-[#98B0A8] text-base'>
                 <TableCell className='text-[#34554B] dark:text-white p-5' component="th" scope="row">
                   {row.year}
                 </TableCell>

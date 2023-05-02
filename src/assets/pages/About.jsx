@@ -6,6 +6,7 @@ import "../styles/blink-animation.css";
 import Skills from "../../components/Skills";
 import { HiOutlineFolder } from "react-icons/hi";
 import "../styles/card.css";
+import { useEffect } from "react";
 
 const About = () => {
   const animation = useSpring({
@@ -13,6 +14,11 @@ const About = () => {
     from: { opacity: 0 },
     config: { duration: 1000 },
   });
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <animated.section style={animation} className="w-full px-4 pt-36 md:pt-10 grid grid-cols-1 sm:grid-cols-2 place-items-center gap-4 text-white">
         <div className="relative text-left sm:text-left">
@@ -58,6 +64,3 @@ const About = () => {
 };
 
 export default About;
-        {/* <div>
-          <img src={meChat} alt="bubble chat" className='w-80 rounded-lg hover:opacity-100 transition ease-in-out duration-100 md:block sm:hidden opacity-70 object-contain hover:-translate-y-2 hover:-translate-x-2 hover:border-b-4 hover:border-r-4 border-b-slate-500 border-r-slate-500 border-dashed' />
-        </div> */}
