@@ -1,9 +1,18 @@
-import React from 'react'
+import {useLayoutEffect} from 'react'
 import {FiUser, FiHome, FiFolder, FiEdit3, FiMail, FiBriefcase} from 'react-icons/fi'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 const NavMenuLinks = () => {
   const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleClick = ()=>{
+    navigate('/');
+  }
+
+  useLayoutEffect(()=>{
+    window.scrollTo(0,0)
+  },[navigate])
 
   return (
     <div className="flex justify-center md:justify-end text-[#324B4C] dark:text-white font-medium menu menu-horizontal rounded-box bg-transparent flex-col md:flex-row navbar">
@@ -53,7 +62,7 @@ const NavMenuLinks = () => {
             <Link to={location.pathname === "/portfolio" ? "/" : "/portfolio"}>
               <div className="flex items-center mr-1 group">
                 <div className="flex items-center  p-1">
-                  {location.pathname === "/portfolio" ? (
+                  {location.pathname === "/#portfolio" ? (
                     <FiHome className="text-white group-active:font-bold dark:text-white inline-block mr-1 md:m-1 group-hover:text-white group-hover:transition group-hover:duration-200 group-hover:ease-linear dark:group-hover:opacity-50" />
                   ) : (
                     <FiFolder className="text-[#324B4C] dark:text-white inline-block mr-1 md:m-1 group-hover:text-white group-hover:transition group-hover:duration-200 group-hover:ease-linear dark:group-hover:opacity-50" />

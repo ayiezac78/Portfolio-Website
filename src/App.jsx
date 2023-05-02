@@ -5,7 +5,7 @@ import NavigationBar from './components/NavigationBar';
 import Hero from './components/Hero';
 import About from './assets/pages/About'
 import Footer from './components/Footer';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router , Route, Routes } from 'react-router-dom';
 import Portfolio from './components/Portfolio';
 import NavTabs from './components/NavTabs';
 import Blog from './assets/pages/Blog';
@@ -46,7 +46,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <Router>
       <StyledEngineProvider injectFirst>
         <div className="flex justify-center items-center h-screen w-full font-space-mono">
           {isLoading ? (
@@ -64,12 +64,12 @@ function App() {
               <NavigationBar theme={theme} toggleMode={toggleMode} />
               <main className="min-h-screen">
                 <Routes>
-                  <Route path="/" element={<Hero />} />
-                  <Route path="/about" element={<About />} />
+                  <Route exact path="/" element={<Hero />} />
+                  <Route exact path="/about" element={<About />} />
                   <Route path="/portfolio" element={<Portfolio />} />
-                  <Route path="/experience" element={<NavTabs />} />
-                  <Route path="/blogs" element={<Blog />} />
-                  <Route path="/contact" element={<Contact />} />
+                  <Route exact path="/experience" element={<NavTabs />} />
+                  <Route exact path="/blogs" element={<Blog />} />
+                  <Route exact path="/contact" element={<Contact />} />
                 </Routes>
               </main>
               <Footer />
@@ -77,7 +77,7 @@ function App() {
           )}
         </div>
       </StyledEngineProvider>
-    </BrowserRouter>
+    </Router>
   );
 }
 
