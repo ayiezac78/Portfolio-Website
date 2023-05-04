@@ -64,10 +64,10 @@ const Skills = () => {
             </div>
           </div>
           <div>
-            <div className='tooltip' data-tip="Git">
+            <div className='tooltip' data-tip="Cinematography">
               <TiVideo className='h-7 w-7'/>
             </div>
-            <div className='tooltip' data-tip="Git">
+            <div className='tooltip' data-tip="Video Editing">
               <BsFileEarmarkPlayFill className='h-7 w-7'/>
             </div>
           </div>
