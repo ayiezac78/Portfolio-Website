@@ -56,7 +56,7 @@ export default function BasicTabs() {
   });
 
   return (
-    <animated.section style={animation} className=" py-40 grid place-items-center">
+    <animated.section style={animation} className="mt-40 py-40 grid place-items-center">
       <h1 className=" text-[#324B4C] mb-3 md:mb-0 font-bold dark:text-slate-50 text-2xl md:text-4xl py-10 md:py-10">
         Career History
       </h1>
