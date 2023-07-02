@@ -94,7 +94,7 @@ export default function BasicTabs() {
               <ul>
                 <li className=" before:content-['ᐉ']"> Maintaining and updating current websites.</li>
                 <li className=" before:content-['ᐉ']"> Collaborates with the group of SEO & Content Writing team via Trello</li>
-                <li className=" before:content-['ᐉ']"> Web Crawling using Screaming Frog SEO Spider App and uploads XML file to Google Search Console.</li>
+                <li className=" before:content-['ᐉ']"> Web Crawling using Screaming Frog SEO Spider and uploads XML file to Google Search Console.</li>
               </ul>
         </TabPanel>
         <TabPanel value={value} index={1}>
