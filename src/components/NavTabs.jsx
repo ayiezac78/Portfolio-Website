@@ -79,16 +79,26 @@ export default function BasicTabs() {
             textColor="#324B4C"
             aria-label="scrollable force tabs example"
           >
-            <Tab className="hover:bg-[#7F928E] transition-all duration-200 ease-in-out" label={<span className="font-space-mono dark:text-white">Kodego</span> } {...a11yProps(0)} />
-            <Tab className="hover:bg-[#7F928E] transition-all duration-200 ease-in-out" label={<span className="font-space-mono dark:text-white">Safeguard DNA Diagnostics, Inc.</span> } {...a11yProps(1)} />
-            <Tab className="hover:bg-[#7F928E] transition-all duration-200 ease-in-out" label={<span className="font-space-mono dark:text-white">GNP1 Marketing</span> } {...a11yProps(2)} />
-            <Tab className="hover:bg-[#7F928E] transition-all duration-200 ease-in-out" label={<span className="font-space-mono dark:text-white">Island Living Channel</span> } {...a11yProps(3)} />
-            <Tab className="hover:bg-[#7F928E] transition-all duration-200 ease-in-out" label={<span className="font-space-mono dark:text-white">Negros Women for Tomorrow Foundation, Inc.</span> } {...a11yProps(4)} />
-            <Tab className="hover:bg-[#7F928E] transition-all duration-200 ease-in-out" label={<span className="font-space-mono dark:text-white">Binalbagan Catholic College</span> } {...a11yProps(5)} />
+            <Tab className="hover:bg-[#7F928E] transition-all duration-200 ease-in-out" label={<span className="font-space-mono dark:text-white">Cenix</span> } {...a11yProps(0)} />
+            <Tab className="hover:bg-[#7F928E] transition-all duration-200 ease-in-out" label={<span className="font-space-mono dark:text-white">Kodego</span> } {...a11yProps(1)} />
+            <Tab className="hover:bg-[#7F928E] transition-all duration-200 ease-in-out" label={<span className="font-space-mono dark:text-white">Safeguard DNA Diagnostics, Inc.</span> } {...a11yProps(2)} />
+            <Tab className="hover:bg-[#7F928E] transition-all duration-200 ease-in-out" label={<span className="font-space-mono dark:text-white">GNP1 Marketing</span> } {...a11yProps(3)} />
+            <Tab className="hover:bg-[#7F928E] transition-all duration-200 ease-in-out" label={<span className="font-space-mono dark:text-white">Island Living Channel</span> } {...a11yProps(4)} />
+            <Tab className="hover:bg-[#7F928E] transition-all duration-200 ease-in-out" label={<span className="font-space-mono dark:text-white">Negros Women for Tomorrow Foundation, Inc.</span> } {...a11yProps(5)} />
+            <Tab className="hover:bg-[#7F928E] transition-all duration-200 ease-in-out" label={<span className="font-space-mono dark:text-white">Binalbagan Catholic College</span> } {...a11yProps(6)} />
           </Tabs>
         </Box>
         <TabPanel value={value} index={0}>
-        <p className="mb-2 text-xl font-bold"><span className='text-[#324B4C] dark:text-white'>Full-stack Web Developer Trainee</span> <a href="https://kodego.ph/" className=" link link-hover dark:text-white">@ Kodego</a></p>
+        <p className="mb-2 text-xl font-bold"><span className='text-[#324B4C] dark:text-white'>Front-end Web Developer</span> <a href="https://cenixweb.com/" className=" link link-hover dark:text-white">@ Cenix BPO Web Development Services</a></p>
+            <p className="mb-5 text-sm">June 2023 - Present</p>
+              <ul>
+                <li className=" before:content-['ᐉ']"> Maintaining and updating current websites.</li>
+                <li className=" before:content-['ᐉ']"> Collaborates with the group of SEO & Content Writing team via Trello</li>
+                <li className=" before:content-['ᐉ']"> Web Crawling using Screaming Frog SEO Spider and uploads XML file to Google Search Console.</li>
+              </ul>
+        </TabPanel>
+        <TabPanel value={value} index={1}>
+        <p className="mb-2 text-xl font-bold"><span className='text-[#324B4C] dark:text-white'>Bootcamp Graduate</span> <a href="https://kodego.ph/" className=" link link-hover dark:text-white">@ Kodego</a></p>
             <p className="mb-5 text-sm">December 2022 - April 2023</p>
               <ul>
                 <li className=" before:content-['ᐉ']"> Database administration and website design</li>
@@ -97,7 +107,7 @@ export default function BasicTabs() {
                 <li className=" before:content-['ᐉ']"> Providing leadership and mentoring co-trainee through code collaboration and knowledge shares.</li>
               </ul>
         </TabPanel>
-        <TabPanel value={value} index={1}>
+        <TabPanel value={value} index={2}>
           <p className="mb-2 text-xl font-bold"><span className='text-[#324B4C] dark:text-white'>Medical Encoder</span> @ Safeguard DNA Diagnostics, Inc.</p>
             <p className="mb-5 text-sm">January 2021 - February 2023</p>
               <ul>
@@ -106,7 +116,7 @@ export default function BasicTabs() {
                 <li className=" before:content-['ᐉ']"> Consolidating and verifying patient information & patient laboratory results in the CDRS report before submitting it to the Department of Health (DOH)</li>
               </ul>
         </TabPanel>
-        <TabPanel value={value} index={2}>
+        <TabPanel value={value} index={3}>
           <p className="mb-2 text-xl font-bold"><span className='text-[#324B4C] dark:text-white'>Field Auditor</span> @ GNP1 Marketing</p>
             <p className="mb-5 text-sm">June 2019 - March 2020</p>
               <ul>
@@ -115,7 +125,7 @@ export default function BasicTabs() {
                 <li className=" before:content-['ᐉ']"> Conducted monthly audits & reports of the warehouse and monitored remittances to ensure accuracy and balance</li>
               </ul>
         </TabPanel>
-        <TabPanel value={value} index={3}>
+        <TabPanel value={value} index={4}>
           <p className="mb-2 text-xl font-bold"><span className='text-[#324B4C] dark:text-white'>Freelance Videographer</span> @ Island Living Channel</p>
           <p className="mb-5 text-sm">January - April 2019</p>
             <ul>
@@ -123,7 +133,7 @@ export default function BasicTabs() {
               <li className=" before:content-['ᐉ']"> Assisted the Lead Videographer in using various tools for videography</li>
             </ul>
         </TabPanel>
-        <TabPanel value={value} index={4}>
+        <TabPanel value={value} index={5}>
           <p className="mb-2 text-xl font-bold"><span className='text-[#324B4C] dark:text-white'>Loan Officer</span>  <a href="https://nwtf.org.ph/" className="link link-hover dark:text-white">@ Negros Women for Tomorrow Foundation, Inc.</a></p>
           <p className="mb-5 text-sm">October 2016 - January 2019</p>
             <ul>
@@ -133,7 +143,7 @@ export default function BasicTabs() {
               <li className=" before:content-['ᐉ']"> Markets various products, including both productive and non-productive loans</li>
             </ul>
         </TabPanel>
-        <TabPanel value={value} index={5}>
+        <TabPanel value={value} index={6}>
           <p className="mb-2 text-xl"><span className='text-[#324B4C] dark:text-white'>BS Information Technology</span> @ Binalbagan Catholic College</p>
           <p className="mb-5 text-sm">June 2011 - April 2015</p>
           <ul>
