@@ -20,7 +20,7 @@ const About = () => {
   }, []);
 
   return (
-    <animated.section style={animation} className="w-full px-4 pt-36 md:pt-10 grid grid-cols-1 sm:grid-cols-2 place-items-center gap-4 text-white">
+    <animated.section style={animation} className="w-full px-4 pt-16 md:pt-10 grid grid-cols-1 sm:grid-cols-2 place-items-center gap-4 text-white">
         <div className="relative text-left sm:text-left">
           <h1 className="text-2xl md:text-3xl font-bold mb-5 text-[#324B4C] dark:text-white pt-36">
             Self Overview

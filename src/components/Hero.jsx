@@ -16,13 +16,13 @@ const Hero = () => {
   }, []);
 
   return (
-    <animated.section style={animation} className="py-10 md:py-32 sm:py-28 min-h-screen hero">
-      <div className="grid grid-cols-1 md:grid-cols-1 place-content-center place-items-center gap-5 md:gap-10 text-white p-5 sm:py-32 md:py-32 lg:py-32 h-full">
-        <div className="flex flex-col lg:justify-center lg:items-center ">
-          <p className="text-[#324B4C] mb-2 text-lg md:text-xl font-bold dark:text-white">
+    <animated.section style={animation} className="py-10 2xl:py-32 xl:py-32 lg:py-32 md:py-32 sm:py-32 xs:py-32 min-h-screen xl:min-h-screen 2xl:min-h-screen lg:min-h-screen md:min-h-screen sm:min-h-screen xs:min-h-screen hero 2xl:hero xl:hero lg:hero md:hero sm:hero xs:hero">
+      <div className="grid grid-cols-1 md:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 place-content-center place-items-center gap-5 md:gap-10 sm:gap-10 xs:gap-10 text-white p-5 xs:py-32 sm:py-32 md:py-32 lg:py-32 h-full xs:h-full sm:h-full md:h-full lg:h-full">
+        <div className="flex flex-col lg:justify-center lg:items-center md:justify-center md:items-center sm:justify-center sm:items-center xs:justify-center xs:items-center">
+          <p className="text-[#324B4C] mb-2 text-lg md:text-xl sm:text-sm xs:text-xs font-bold dark:text-white">
             Hi, my name is
           </p>
-          <h1 className="text-4xl font-bold text-[#324B4C] md:text-7xl mb-3 dark:text-white">
+          <h1 className="text-4xl font-bold text-[#324B4C] md:text-7xl sm:text-6xl xs:text-5xl mb-3 dark:text-white">
             Ariel Maniago
             <span className="relative lg:right-5 md:right-[21px] sm:right-[10px] blink font-bold">
               |

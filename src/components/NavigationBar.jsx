@@ -134,7 +134,7 @@ useEffect(() => {
                         location.pathname === "/blogs" ? "text-white" : ""
                       } group-hover:text-white group-hover:transition group-hover:duration-200 group-hover:ease-linear dark:group-hover:opacity-50`}
                     >
-                      {location.pathname === "/blogs" ? "Home" : "Blogs"}
+                      {location.pathname === "/blogs" ? "Home" : "Journal"}
                     </span>
                   </div>
                 </div>
@@ -248,7 +248,7 @@ useEffect(() => {
                       location.pathname === "/blogs" ? "text-white" : "text-[#324B4C]"
                     } group-hover:text-white group-hover:transition group-hover:duration-200 group-hover:ease-linear dark:group-hover:opacity-50 dark:text-white`}
                   >
-                    {location.pathname === "/blogs" ? "Home" : "Blogs"}
+                    {location.pathname === "/blogs" ? "Home" : "Journal"}
                   </span>
                 </div>
               </div>
